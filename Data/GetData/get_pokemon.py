@@ -38,7 +38,7 @@ def get_pokemon():
         data = {
             "types": [],
             "moves": [],
-            "stats": {}
+            "base-stats": {}
         }
 
         for type in type_list:
@@ -48,12 +48,12 @@ def get_pokemon():
             data['moves'].append(move['pokemon_v2_move']['name'])
 
         for stat in stat_list:
-            data['stats'][stat['pokemon_v2_stat']['name']] = stat['base_stat']
+            data['base-stats'][stat['pokemon_v2_stat']['name']] = stat['base_stat']
 
         pokemon[name] = data
 
         #print(f"Pokemon: {name}\nTypes: {data['types']}\nMoves: {data['moves']}\nStats: {data['stats']}")
-    with open('pokemon.json', 'w') as f: 
+    with open('data/pokemon.json', 'w') as f: 
         f.write(json.dumps(pokemon))
 
 get_pokemon()
