@@ -1,6 +1,6 @@
 import unittest
 
-from Move import Move
+from move import Move
 
 
 class TestInit(unittest.TestCase):
