@@ -52,6 +52,7 @@ class Pokemon:
             remaining_evs -= ev
             self.evs[stat] = ev
             self.ivs[stat] = iv
+        self.current_hp = self.stats['hp']
 
     def generate_moveset(self):
         movepool: list = self.data['moves']
