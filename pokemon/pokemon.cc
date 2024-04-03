@@ -1,49 +1,16 @@
-#ifndef __POKEMON__
-#define __POKEMON__
+// Pokemon.cpp
+#include "pokemon.h"
 
-#include <string>
-#include <vector>
+// Constructor
+Pokemon::Pokemon(std::string& name, Stats stats, std::vector<Move> moves)
+    : name(std::move(name)), stats(std::move(stats)), moves(std::move(moves)) {
+  // The body is empty since all work is done by the member initializer list.
+}
 
-struct PokemonStats {
-  PokemonStats(int hpValue, int atkValue, int defValue, int speValue,
-               int spdValue)
-      : hp(hpValue),
-        atk(atkValue),
-        def(defValue),
-        spe(speValue),
-        spd(spdValue) {}
-  int hp;
-  int atk;
-  int def;
-  int spe;
-  int spd;
-};
+// Getter for the name
+std::string Pokemon::getName() { return name; }
 
-struct Move {
-  Move(const std::string& name, int dmg, int pp)
-      : name(name), dmg(dmg), pp(pp) {}
+int Pokemon::getStat(std::string& stat) { return stats.getStat(stat); }
 
-  std::string name;
-  int dmg;
-  int pp;
-};
-
-struct PokemonMoves {
-  std::vector<Move> moves;
-
-  PokemonMoves(std::initializer_list<Move> initList) : moves(initList) {}
-};
-
-class Pokemon {
- private:
-  std::string name;
-  PokemonStats stats;
-  PokemonMoves moves;
-
- public:
-  virtual std::string getName() = 0;
-  virtual int getStat() = 0;
-  virtual PokemonMoves getMoves() = 0;
-};
-
-#endif
+// Getter for the moves
+std::vector<Move> Pokemon::getMoves() { return moves; }
