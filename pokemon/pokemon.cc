@@ -1,4 +1,5 @@
 #ifndef __POKEMON__
+#define __POKEMON__
 
 #include <string>
 #include <vector>
@@ -40,9 +41,9 @@ class Pokemon {
   PokemonMoves moves;
 
  public:
-  std::string getName();
-  int getStat();
-  PokemonMoves getMoves();
+  virtual std::string getName() = 0;
+  virtual int getStat() = 0;
+  virtual PokemonMoves getMoves() = 0;
 };
 
 #endif
