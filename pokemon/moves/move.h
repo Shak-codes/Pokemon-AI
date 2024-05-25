@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "constants/enums.h"
+#include "../constants/enums.h"
 
 class Move {
   Effect effect;
@@ -11,15 +11,13 @@ class Move {
   std::string name;
   int dmg;
   int pp;
-  int priority;
 
  public:
-  Move(const std::string& name, int dmg, int pp, Effect effect);
+  Move(const std::string& name, Type type, int dmg, int pp, Effect effect);
   Type getType() const;
   std::string getName() const;
   int getDamage() const;
   int getPP() const;
-  int getPriority() const;
   Effect getEffect() const;
   bool pureStatus() const;
   bool isBuff() const;
