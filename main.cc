@@ -1,10 +1,10 @@
 #include <iostream>
 
-#include "constants/enums.h"
-#include "move.h"
-#include "pokemon.h"
-#include "stats.h"
-#include "trainer.h"
+#include "pokemon/constants/enums.h"
+#include "pokemon/moves/move.h"
+#include "pokemon/pokemon.h"
+#include "pokemon/stats/stats.h"
+#include "trainers/trainer.h"
 
 int main() {
   // Create some stats

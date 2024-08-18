@@ -4,9 +4,9 @@
 #include <string>
 #include <vector>
 
+#include "../../pokemon/moves/move.h"
+#include "../../pokemon/pokemon.h"
 #include "../constants/enums.h"
-#include "../moves/move.h"
-#include "../pokemon.h"
 
 class AI {
  public:

@@ -1,0 +1,1652 @@
+{
+    "Absorb": {
+        "name": "Absorb",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": true
+    },
+    "Acid": {
+        "name": "Acid",
+        "type": "Poison",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Acid Armor": {
+        "name": "Acid Armor",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Agility": {
+        "name": "Agility",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Amnesia": {
+        "name": "Amnesia",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Aurora Beam": {
+        "name": "Aurora Beam",
+        "type": "Ice",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Barrage": {
+        "name": "Barrage",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.85,
+        "pp": "20",
+        "effect": true
+    },
+    "Barrier": {
+        "name": "Barrier",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Bide": {
+        "name": "Bide",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "10",
+        "effect": true
+    },
+    "Bind": {
+        "name": "Bind",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.85,
+        "pp": "20",
+        "effect": true
+    },
+    "Bite": {
+        "name": "Bite",
+        "type": "Dark",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": true
+    },
+    "Blizzard": {
+        "name": "Blizzard",
+        "type": "Ice",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 110,
+        "accuracy": 0.7,
+        "pp": "5",
+        "effect": true
+    },
+    "Body Slam": {
+        "name": "Body Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 85,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Bone Club": {
+        "name": "Bone Club",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 0.85,
+        "pp": "20",
+        "effect": true
+    },
+    "Bonemerang": {
+        "name": "Bonemerang",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 0.9,
+        "pp": "10",
+        "effect": true
+    },
+    "Bubble": {
+        "name": "Bubble",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Bubble Beam": {
+        "name": "Bubble Beam",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Clamp": {
+        "name": "Clamp",
+        "type": "Water",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 35,
+        "accuracy": 0.85,
+        "pp": "15",
+        "effect": true
+    },
+    "Comet Punch": {
+        "name": "Comet Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 18,
+        "accuracy": 0.85,
+        "pp": "15",
+        "effect": true
+    },
+    "Confuse Ray": {
+        "name": "Confuse Ray",
+        "type": "Ghost",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Confusion": {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": true
+    },
+    "Constrict": {
+        "name": "Constrict",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 10,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": true
+    },
+    "Conversion": {
+        "name": "Conversion",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Counter": {
+        "name": "Counter",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Crabhammer": {
+        "name": "Crabhammer",
+        "type": "Water",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 0.9,
+        "pp": "10",
+        "effect": true
+    },
+    "Cut": {
+        "name": "Cut",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 0.95,
+        "pp": "30",
+        "effect": false
+    },
+    "Defense Curl": {
+        "name": "Defense Curl",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "40",
+        "effect": true
+    },
+    "Dig": {
+        "name": "Dig",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Disable": {
+        "name": "Disable",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.55,
+        "pp": "20",
+        "effect": true
+    },
+    "Dizzy Punch": {
+        "name": "Dizzy Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Double Kick": {
+        "name": "Double Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 30,
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Double Slap": {
+        "name": "Double Slap",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.85,
+        "pp": "10",
+        "effect": true
+    },
+    "Double Team": {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "15",
+        "effect": true
+    },
+    "Double-Edge": {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Dragon Rage": {
+        "name": "Dragon Rage",
+        "type": "Dragon",
+        "category": "Special",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Dream Eater": {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Drill Peck": {
+        "name": "Drill Peck",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": false
+    },
+    "Earthquake": {
+        "name": "Earthquake",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Egg Bomb": {
+        "name": "Egg Bomb",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 0.75,
+        "pp": "10",
+        "effect": false
+    },
+    "Ember": {
+        "name": "Ember",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": true
+    },
+    "Explosion": {
+        "name": "Explosion",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 250,
+        "accuracy": 1.0,
+        "pp": "5",
+        "effect": true
+    },
+    "Fire Blast": {
+        "name": "Fire Blast",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 110,
+        "accuracy": 0.85,
+        "pp": "5",
+        "effect": true
+    },
+    "Fire Punch": {
+        "name": "Fire Punch",
+        "type": "Fire",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Fire Spin": {
+        "name": "Fire Spin",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 35,
+        "accuracy": 0.85,
+        "pp": "15",
+        "effect": true
+    },
+    "Fissure": {
+        "name": "Fissure",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.3,
+        "pp": "5",
+        "effect": true
+    },
+    "Flamethrower": {
+        "name": "Flamethrower",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Flash": {
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Fly": {
+        "name": "Fly",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 0.95,
+        "pp": "15",
+        "effect": true
+    },
+    "Focus Energy": {
+        "name": "Focus Energy",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Fury Attack": {
+        "name": "Fury Attack",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.85,
+        "pp": "20",
+        "effect": true
+    },
+    "Fury Swipes": {
+        "name": "Fury Swipes",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 18,
+        "accuracy": 0.8,
+        "pp": "15",
+        "effect": true
+    },
+    "Glare": {
+        "name": "Glare",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Growl": {
+        "name": "Growl",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "40",
+        "effect": true
+    },
+    "Growth": {
+        "name": "Growth",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Guillotine": {
+        "name": "Guillotine",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.3,
+        "pp": "5",
+        "effect": true
+    },
+    "Gust": {
+        "name": "Gust",
+        "type": "Flying",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": true
+    },
+    "Harden": {
+        "name": "Harden",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Haze": {
+        "name": "Haze",
+        "type": "Ice",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Headbutt": {
+        "name": "Headbutt",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "High Jump Kick": {
+        "name": "High Jump Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 130,
+        "accuracy": 0.9,
+        "pp": "10",
+        "effect": true
+    },
+    "Horn Attack": {
+        "name": "Horn Attack",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": false
+    },
+    "Horn Drill": {
+        "name": "Horn Drill",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.3,
+        "pp": "5",
+        "effect": true
+    },
+    "Hydro Pump": {
+        "name": "Hydro Pump",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 110,
+        "accuracy": 0.8,
+        "pp": "5",
+        "effect": false
+    },
+    "Hyper Beam": {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 150,
+        "accuracy": 0.9,
+        "pp": "5",
+        "effect": true
+    },
+    "Hyper Fang": {
+        "name": "Hyper Fang",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.9,
+        "pp": "15",
+        "effect": true
+    },
+    "Hypnosis": {
+        "name": "Hypnosis",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.6,
+        "pp": "20",
+        "effect": true
+    },
+    "Ice Beam": {
+        "name": "Ice Beam",
+        "type": "Ice",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Ice Punch": {
+        "name": "Ice Punch",
+        "type": "Ice",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Jump Kick": {
+        "name": "Jump Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 0.95,
+        "pp": "10",
+        "effect": true
+    },
+    "Karate Chop": {
+        "name": "Karate Chop",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": true
+    },
+    "Kinesis": {
+        "name": "Kinesis",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.8,
+        "pp": "15",
+        "effect": true
+    },
+    "Leech Life": {
+        "name": "Leech Life",
+        "type": "Bug",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Leech Seed": {
+        "name": "Leech Seed",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.9,
+        "pp": "10",
+        "effect": true
+    },
+    "Leer": {
+        "name": "Leer",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Lick": {
+        "name": "Lick",
+        "type": "Ghost",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 30,
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Light Screen": {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Lovely Kiss": {
+        "name": "Lovely Kiss",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.75,
+        "pp": "10",
+        "effect": true
+    },
+    "Low Kick": {
+        "name": "Low Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Meditate": {
+        "name": "Meditate",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "40",
+        "effect": true
+    },
+    "Mega Drain": {
+        "name": "Mega Drain",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Mega Kick": {
+        "name": "Mega Kick",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 0.75,
+        "pp": "5",
+        "effect": false
+    },
+    "Mega Punch": {
+        "name": "Mega Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.85,
+        "pp": "20",
+        "effect": false
+    },
+    "Metronome": {
+        "name": "Metronome",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "10",
+        "effect": true
+    },
+    "Mimic": {
+        "name": "Mimic",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "10",
+        "effect": true
+    },
+    "Minimize": {
+        "name": "Minimize",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "10",
+        "effect": true
+    },
+    "Mirror Move": {
+        "name": "Mirror Move",
+        "type": "Flying",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Mist": {
+        "name": "Mist",
+        "type": "Ice",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Night Shade": {
+        "name": "Night Shade",
+        "type": "Ghost",
+        "category": "Special",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Pay Day": {
+        "name": "Pay Day",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Peck": {
+        "name": "Peck",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 35,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": false
+    },
+    "Petal Dance": {
+        "name": "Petal Dance",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Pin Missile": {
+        "name": "Pin Missile",
+        "type": "Bug",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 25,
+        "accuracy": 0.95,
+        "pp": "20",
+        "effect": true
+    },
+    "Poison Gas": {
+        "name": "Poison Gas",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.9,
+        "pp": "40",
+        "effect": true
+    },
+    "Poison Powder": {
+        "name": "Poison Powder",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.75,
+        "pp": "35",
+        "effect": true
+    },
+    "Poison Sting": {
+        "name": "Poison Sting",
+        "type": "Poison",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": true
+    },
+    "Pound": {
+        "name": "Pound",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": false
+    },
+    "Psybeam": {
+        "name": "Psybeam",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Psychic": {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Psywave": {
+        "name": "Psywave",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Quick Attack": {
+        "name": "Quick Attack",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Rage": {
+        "name": "Rage",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Razor Leaf": {
+        "name": "Razor Leaf",
+        "type": "Grass",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 55,
+        "accuracy": 0.95,
+        "pp": "25",
+        "effect": true
+    },
+    "Razor Wind": {
+        "name": "Razor Wind",
+        "type": "Normal",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Recover": {
+        "name": "Recover",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "5",
+        "effect": true
+    },
+    "Reflect": {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Rest": {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "5",
+        "effect": true
+    },
+    "Roar": {
+        "name": "Roar",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Rock Slide": {
+        "name": "Rock Slide",
+        "type": "Rock",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 0.9,
+        "pp": "10",
+        "effect": true
+    },
+    "Rock Throw": {
+        "name": "Rock Throw",
+        "type": "Rock",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 0.9,
+        "pp": "15",
+        "effect": false
+    },
+    "Rolling Kick": {
+        "name": "Rolling Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": 0.85,
+        "pp": "15",
+        "effect": true
+    },
+    "Sand Attack": {
+        "name": "Sand Attack",
+        "type": "Ground",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Scratch": {
+        "name": "Scratch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": false
+    },
+    "Screech": {
+        "name": "Screech",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.85,
+        "pp": "40",
+        "effect": true
+    },
+    "Seismic Toss": {
+        "name": "Seismic Toss",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Self-Destruct": {
+        "name": "Self-Destruct",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 200,
+        "accuracy": 1.0,
+        "pp": "5",
+        "effect": true
+    },
+    "Sharpen": {
+        "name": "Sharpen",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "30",
+        "effect": true
+    },
+    "Sing": {
+        "name": "Sing",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.55,
+        "pp": "15",
+        "effect": true
+    },
+    "Skull Bash": {
+        "name": "Skull Bash",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 130,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Sky Attack": {
+        "name": "Sky Attack",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 140,
+        "accuracy": 0.9,
+        "pp": "5",
+        "effect": true
+    },
+    "Slam": {
+        "name": "Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.75,
+        "pp": "20",
+        "effect": false
+    },
+    "Slash": {
+        "name": "Slash",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Sleep Powder": {
+        "name": "Sleep Powder",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.75,
+        "pp": "15",
+        "effect": true
+    },
+    "Sludge": {
+        "name": "Sludge",
+        "type": "Poison",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Smog": {
+        "name": "Smog",
+        "type": "Poison",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 30,
+        "accuracy": 0.7,
+        "pp": "20",
+        "effect": true
+    },
+    "Smokescreen": {
+        "name": "Smokescreen",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Soft-Boiled": {
+        "name": "Soft-Boiled",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "5",
+        "effect": true
+    },
+    "Solar Beam": {
+        "name": "Solar Beam",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Sonic Boom": {
+        "name": "Sonic Boom",
+        "type": "Normal",
+        "category": "Special",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.9,
+        "pp": "20",
+        "effect": true
+    },
+    "Spike Cannon": {
+        "name": "Spike Cannon",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Splash": {
+        "name": "Splash",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "40",
+        "effect": true
+    },
+    "Spore": {
+        "name": "Spore",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Stomp": {
+        "name": "Stomp",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Strength": {
+        "name": "Strength",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": false
+    },
+    "String Shot": {
+        "name": "String Shot",
+        "type": "Bug",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.95,
+        "pp": "40",
+        "effect": true
+    },
+    "Struggle": {
+        "name": "Struggle",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": "N/A",
+        "pp": "\u2014",
+        "effect": true
+    },
+    "Stun Spore": {
+        "name": "Stun Spore",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.75,
+        "pp": "30",
+        "effect": true
+    },
+    "Submission": {
+        "name": "Submission",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.8,
+        "pp": "20",
+        "effect": true
+    },
+    "Substitute": {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "10",
+        "effect": true
+    },
+    "Super Fang": {
+        "name": "Super Fang",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.9,
+        "pp": "10",
+        "effect": true
+    },
+    "Supersonic": {
+        "name": "Supersonic",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.55,
+        "pp": "20",
+        "effect": true
+    },
+    "Surf": {
+        "name": "Surf",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Swift": {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Swords Dance": {
+        "name": "Swords Dance",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Tackle": {
+        "name": "Tackle",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": false
+    },
+    "Tail Whip": {
+        "name": "Tail Whip",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Take Down": {
+        "name": "Take Down",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 0.85,
+        "pp": "20",
+        "effect": true
+    },
+    "Teleport": {
+        "name": "Teleport",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Thrash": {
+        "name": "Thrash",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Thunder": {
+        "name": "Thunder",
+        "type": "Electric",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 110,
+        "accuracy": 0.7,
+        "pp": "10",
+        "effect": true
+    },
+    "Thunder Punch": {
+        "name": "Thunder Punch",
+        "type": "Electric",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Thunder Shock": {
+        "name": "Thunder Shock",
+        "type": "Electric",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": true
+    },
+    "Thunder Wave": {
+        "name": "Thunder Wave",
+        "type": "Electric",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.9,
+        "pp": "20",
+        "effect": true
+    },
+    "Thunderbolt": {
+        "name": "Thunderbolt",
+        "type": "Electric",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Toxic": {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": 0.9,
+        "pp": "10",
+        "effect": true
+    },
+    "Transform": {
+        "name": "Transform",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "10",
+        "effect": true
+    },
+    "Tri Attack": {
+        "name": "Tri Attack",
+        "type": "Normal",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": "10",
+        "effect": true
+    },
+    "Twineedle": {
+        "name": "Twineedle",
+        "type": "Bug",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 25,
+        "accuracy": 1.0,
+        "pp": "20",
+        "effect": true
+    },
+    "Vine Whip": {
+        "name": "Vine Whip",
+        "type": "Grass",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 45,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": false
+    },
+    "Vise Grip": {
+        "name": "Vise Grip",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 55,
+        "accuracy": 1.0,
+        "pp": "30",
+        "effect": false
+    },
+    "Water Gun": {
+        "name": "Water Gun",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": "25",
+        "effect": false
+    },
+    "Waterfall": {
+        "name": "Waterfall",
+        "type": "Water",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": "15",
+        "effect": true
+    },
+    "Whirlwind": {
+        "name": "Whirlwind",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "20",
+        "effect": true
+    },
+    "Wing Attack": {
+        "name": "Wing Attack",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": 1.0,
+        "pp": "35",
+        "effect": false
+    },
+    "Withdraw": {
+        "name": "Withdraw",
+        "type": "Water",
+        "category": "Status",
+        "target": "Opponent",
+        "power": "N/A",
+        "accuracy": "N/A",
+        "pp": "40",
+        "effect": true
+    },
+    "Wrap": {
+        "name": "Wrap",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.9,
+        "pp": "20",
+        "effect": true
+    }
+}

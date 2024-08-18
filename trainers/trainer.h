@@ -4,9 +4,9 @@
 #include <string>
 #include <vector>
 
+#include "../pokemon/pokemon.h"
 #include "ai/ai.h"
 #include "constants/enums.h"
-#include "pokemon.h"
 
 class Trainer {
   TrainerClass trainerClass;

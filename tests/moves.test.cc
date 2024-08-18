@@ -26,4 +26,6 @@ int main() {
   assert(status_move.getEffect() == Effect::STATUS && ("Success! (status)"));
   assert(status_move.pureStatus() == false && ("Success! (non pure-status)"));
   assert(pure_status_move.pureStatus() == true && ("Success! (pure-status)"));
+
+  return 0;
 }
