@@ -25,14 +25,16 @@ def get_all_moves():
             try:
                 power = int(numbers[0].decode_contents())
             except:
-                power = 'N/A'
+                power = False
             try:
                 acc = int(numbers[1].decode_contents()) / 100
             except:
-                acc = 'N/A'
-            pp = numbers[2].decode_contents()
+                acc = False
+            try:
+                pp = int(numbers[2].decode_contents())
+            except:
+                pp = 'N/A'
         desc = move.find("td", {"class": "cell-long-text"}).decode_contents()
-        effect = bool(len(desc))
         data = {
             "name": name,
             "type": type,
@@ -41,7 +43,15 @@ def get_all_moves():
             "power": power,
             "accuracy": acc,
             "pp": pp,
-            "effect": effect
+            "effects": {
+                "healing": False,
+                "multiHit": False,
+                "alwaysHit": False,
+                "statChanges": {
+                    "target": False,
+                    "user": False
+                }
+            }
         }
         moves[name] = data
     json.dump(moves, f, indent=4)
