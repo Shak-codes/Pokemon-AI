@@ -6,8 +6,8 @@
 #include <vector>
 
 #include "constants/enums.h"
-#include "move.h"
-#include "stats.h"
+#include "moves/move.h"
+#include "stats/stats.h"
 
 class Pokemon {
  private:

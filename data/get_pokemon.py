@@ -1,24 +1,60 @@
 import requests
 from bs4 import BeautifulSoup
-
-f = open("data/pokemon.json", "w")
-
-
-class Move:
-    def __init__(self, name, level):
-        self.name = name
-        self.level = level
-
-    def print_move(self):
-        print(f"Learns {self.name} at level {self.level}")
+import json
 
 
 def get_all_moves():
+    f = open("data/moves.json", "w")
+    moves = {}
     r = requests.get(
-        "https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves")
+        "https://pokemondb.net/move/generation/1")
     soup = BeautifulSoup(r.content, 'html.parser')
-    moves = soup.find_all('li')
-    print(moves)
+    rows = soup.find_all('tr')[1:]
+    for move in rows:
+        name_wrapper = move.find("td", {"class": "cell-name"})
+        if name_wrapper is not None:
+            name = name_wrapper.findChild("a").decode_contents()
+        type_wrapper = move.find("td", {"class": "cell-icon"})
+        if type_wrapper is not None:
+            type = type_wrapper.findChild("a").decode_contents()
+        category_wrapper = move.find("td", {"class": "cell-icon text-center"})
+        if category_wrapper is not None:
+            category = category_wrapper.findChild("img").get("title")
+        numbers = move.find_all("td", {"class": "cell-num"})
+        if numbers is not None:
+            try:
+                power = int(numbers[0].decode_contents())
+            except:
+                power = False
+            try:
+                acc = int(numbers[1].decode_contents()) / 100
+            except:
+                acc = False
+            try:
+                pp = int(numbers[2].decode_contents())
+            except:
+                pp = 'N/A'
+        desc = move.find("td", {"class": "cell-long-text"}).decode_contents()
+        data = {
+            "name": name,
+            "type": type,
+            "category": category,
+            "target": "Opponent",
+            "power": power,
+            "accuracy": acc,
+            "pp": pp,
+            "effects": {
+                "healing": False,
+                "multiHit": False,
+                "alwaysHit": False,
+                "statChanges": {
+                    "target": False,
+                    "user": False
+                }
+            }
+        }
+        moves[name] = data
+    json.dump(moves, f, indent=4)
 
 
 def get_moveset(pokemon: str):
@@ -45,13 +81,17 @@ def get_moveset(pokemon: str):
                 continue
         name = row[i+1].find('span').decode_contents()
         # print(f"{level_learned} - {name} - {type} - {power} - {acc} - {pp}")
-        move_obj = Move(name, 10, 10, level_learned)
+        move_obj = {
+            "name": name,
+            "level": level_learned,
+        }
         moveset.append(move_obj)
-        move_obj.print_move()
     return moveset
 
 
 def get_stats():
+    f = open("data/pokemon.json", "w")
+    pokemon_data = {}
     r = requests.get(
         'https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_I)')
     soup = BeautifulSoup(r.content, 'html.parser')
@@ -69,12 +109,23 @@ def get_stats():
         de = data[3].contents[0].strip('\n')
         spd = data[4].contents[0].strip('\n')
         spatk = data[5].contents[0].strip('\n')
-        print(
-            f"{name} - hp: {hp} - atk: {atk} - def: {de} - spd: {spd} - spatk: {spatk}")
         moveset = get_moveset(name)
 
+        data = {
+            "name": name,
+            "bst": {
+                "hp": hp,
+                "atk": atk,
+                "def": de,
+                "spe": spatk,
+                "spd": spd,
+            },
+            "moves": moveset,
+        }
+        pokemon_data[name] = data
         if name == 'Mew':
             break
+    json.dump(pokemon_data, f, indent=4)
 
 
 get_stats()

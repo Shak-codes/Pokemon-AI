@@ -1,0 +1,3420 @@
+{
+    "Absorb": {
+        "name": "Absorb",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "healing": {
+                "damageDealt": 0.5
+            },
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Acid": {
+        "name": "Acid",
+        "type": "Poison",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "defense": {
+                        "chance": 0.1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Acid Armor": {
+        "name": "Acid Armor",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Self",
+        "power": false,
+        "accuracy": false,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "defense": {
+                        "chance": 1,
+                        "increase": 2
+                    }
+                }
+            }
+        }
+    },
+    "Agility": {
+        "name": "Agility",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "speed": {
+                        "chance": 1,
+                        "increase": 2
+                    }
+                }
+            }
+        }
+    },
+    "Amnesia": {
+        "name": "Amnesia",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "special": {
+                        "chance": 1,
+                        "increase": 2
+                    }
+                }
+            }
+        }
+    },
+    "Aurora Beam": {
+        "name": "Aurora Beam",
+        "type": "Ice",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "attack": {
+                        "chance": 0.1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Barrage": {
+        "name": "Barrage",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.85,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "hits": {
+                    "2": 0.375,
+                    "3": 0.375,
+                    "4": 0.125,
+                    "5": 0.125
+                }
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Barrier": {
+        "name": "Barrier",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "defense": {
+                        "chance": 1,
+                        "increase": 2
+                    }
+                }
+            }
+        }
+    },
+    "Bide": {
+        "name": "Bide",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": true,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Bind": {
+        "name": "Bind",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.75,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 0.375,
+                "3": 0.375,
+                "4": 0.125,
+                "5": 0.125
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Bite": {
+        "name": "Bite",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "flinch": 0.3,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Blizzard": {
+        "name": "Blizzard",
+        "type": "Ice",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 0.9,
+        "pp": 5,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            },
+            "status": {
+                "freeze": 0.1
+            }
+        }
+    },
+    "Body Slam": {
+        "name": "Body Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 85,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "paralyze": 0.3
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Bone Club": {
+        "name": "Bone Club",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 0.85,
+        "pp": 20,
+        "effects": {
+            "flinch": 0.1,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Bonemerang": {
+        "name": "Bonemerang",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 0.9,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 1
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Bubble": {
+        "name": "Bubble",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "speed": {
+                        "chance": 0.1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Bubble Beam": {
+        "name": "Bubble Beam",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "speed": {
+                        "chance": 0.1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Clamp": {
+        "name": "Clamp",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 35,
+        "accuracy": 0.75,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 0.375,
+                "3": 0.375,
+                "4": 0.125,
+                "5": 0.125
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Comet Punch": {
+        "name": "Comet Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 18,
+        "accuracy": 0.85,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 0.375,
+                "3": 0.375,
+                "4": 0.125,
+                "5": 0.125
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Confuse Ray": {
+        "name": "Confuse Ray",
+        "type": "Ghost",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "status": {
+                "confusion": 1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Confusion": {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "status": {
+                "confusion": 0.1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Constrict": {
+        "name": "Constrict",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 10,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "speed": {
+                        "chance": 0.1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Conversion": {
+        "name": "Conversion",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "type": {
+                "user": true,
+                "opponent": false
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Counter": {
+        "name": "Counter",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 20,
+        "priority": -5,
+        "effects": {
+            "counter": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Crabhammer": {
+        "name": "Crabhammer",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 0.85,
+        "pp": 10,
+        "effects": {
+            "critChance": 0.125,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Cut": {
+        "name": "Cut",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 0.95,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Defense Curl": {
+        "name": "Defense Curl",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "defense": {
+                        "chance": 1,
+                        "increase": 1
+                    }
+                }
+            }
+        }
+    },
+    "Dig": {
+        "name": "Dig",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "dig": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Disable": {
+        "name": "Disable",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.55,
+        "pp": 20,
+        "effects": {
+            "disable": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Dizzy Punch": {
+        "name": "Dizzy Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Double Kick": {
+        "name": "Double Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 30,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 1
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Double Slap": {
+        "name": "Double Slap",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.85,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 0.375,
+                "3": 0.375,
+                "4": 0.125,
+                "5": 0.125
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Double Team": {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "evasiveness": 1
+                }
+            }
+        }
+    },
+    "Double-Edge": {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "selfHarm": {
+                "percentage": 0.25
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Dragon Rage": {
+        "name": "Dragon Rage",
+        "type": "Dragon",
+        "category": "Special",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "damage": 40,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Dream Eater": {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "dreamEater": true,
+            "healing": {
+                "damageDealt": 0.5
+            },
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Drill Peck": {
+        "name": "Drill Peck",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Earthquake": {
+        "name": "Earthquake",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "earthquake": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Egg Bomb": {
+        "name": "Egg Bomb",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 0.75,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Ember": {
+        "name": "Ember",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            },
+            "status": {
+                "burn": 0.1
+            }
+        }
+    },
+    "Explosion": {
+        "name": "Explosion",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 170,
+        "accuracy": 1.0,
+        "pp": 5,
+        "effects": {
+            "explosion": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Fire Blast": {
+        "name": "Fire Blast",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 0.85,
+        "pp": 5,
+        "effects": {
+            "status": {
+                "burn": 0.1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Fire Punch": {
+        "name": "Fire Punch",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "burn": 0.1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Fire Spin": {
+        "name": "Fire Spin",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.7,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "multiTurn": {
+                "2": 0.375,
+                "3": 0.375,
+                "4": 0.125,
+                "5": 0.125
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Fissure": {
+        "name": "Fissure",
+        "type": "Ground",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.3,
+        "pp": 5,
+        "effects": {
+            "fissure": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Flamethrower": {
+        "name": "Flamethrower",
+        "type": "Fire",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 95,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "burn": 0.1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Flash": {
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.7,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "accuracy": {
+                        "chance": 0.1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Fly": {
+        "name": "Fly",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 0.95,
+        "pp": 15,
+        "effects": {
+            "invulnerability": {
+                "fly": true
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Focus Energy": {
+        "name": "Focus Energy",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Self",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "critical": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Fury Attack": {
+        "name": "Fury Attack",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.85,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 0.375,
+                "3": 0.375,
+                "4": 0.125,
+                "5": 0.125
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Fury Swipes": {
+        "name": "Fury Swipes",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 18,
+        "accuracy": 0.8,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "2": 0.375,
+                "3": 0.375,
+                "4": 0.125,
+                "5": 0.125
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Glare": {
+        "name": "Glare",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.75,
+        "pp": 30,
+        "effects": {
+            "status": {
+                "paralyze": true
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Growl": {
+        "name": "Growl",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "attack": {
+                        "chance": 1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Growth": {
+        "name": "Growth",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "special": {
+                        "chance": 1,
+                        "increase": 1
+                    }
+                }
+            }
+        }
+    },
+    "Guillotine": {
+        "name": "Guillotine",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.3,
+        "pp": 5,
+        "effects": {
+            "instantKill": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Gust": {
+        "name": "Gust",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Harden": {
+        "name": "Harden",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "defense": {
+                        "chance": 1,
+                        "increase": 1
+                    }
+                }
+            }
+        }
+    },
+    "Haze": {
+        "name": "Haze",
+        "type": "Ice",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "reset": true
+                }
+            }
+        }
+    },
+    "Headbutt": {
+        "name": "Headbutt",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "flinch": 0.3,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "High Jump Kick": {
+        "name": "High Jump Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 130,
+        "accuracy": 0.9,
+        "pp": 10,
+        "effects": {
+            "onMiss": {
+                "selfHarm": {
+                    "percentage": 0.5
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Horn Attack": {
+        "name": "Horn Attack",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Horn Drill": {
+        "name": "Horn Drill",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.3,
+        "pp": 5,
+        "effects": {
+            "instantKill": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Hydro Pump": {
+        "name": "Hydro Pump",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 0.8,
+        "pp": 5,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Hyper Beam": {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 150,
+        "accuracy": 0.9,
+        "pp": 5,
+        "effects": {
+            "recharge": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Hyper Fang": {
+        "name": "Hyper Fang",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.9,
+        "pp": 15,
+        "effects": {
+            "flinch": 0.1,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Hypnosis": {
+        "name": "Hypnosis",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.6,
+        "pp": 20,
+        "effects": {
+            "status": {
+                "sleep": true
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Ice Beam": {
+        "name": "Ice Beam",
+        "type": "Ice",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 95,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "status": {
+                "freeze": 0.1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Ice Punch": {
+        "name": "Ice Punch",
+        "type": "Ice",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "freeze": 0.1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Jump Kick": {
+        "name": "Jump Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 0.95,
+        "pp": 25,
+        "effects": {
+            "onMiss": {
+                "selfHarm": {
+                    "damage": 1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Karate Chop": {
+        "name": "Karate Chop",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "critChance": 0.125,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Kinesis": {
+        "name": "Kinesis",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.8,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "accuracy": {
+                        "chance": 1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Leech Life": {
+        "name": "Leech Life",
+        "type": "Bug",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "healing": {
+                "percentage": {
+                    "damageDealt": 0.5
+                }
+            },
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Leech Seed": {
+        "name": "Leech Seed",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.9,
+        "pp": 10,
+        "effects": {
+            "leech-seed": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Leer": {
+        "name": "Leer",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "defense": {
+                        "chance": 1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Lick": {
+        "name": "Lick",
+        "type": "Ghost",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 30,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "status": {
+                "paralyze": 0.3
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Light Screen": {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "fieldEffect": {
+                "lightScreen": true
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Lovely Kiss": {
+        "name": "Lovely Kiss",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.75,
+        "pp": 10,
+        "effects": {
+            "status": {
+                "sleep": true
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Low Kick": {
+        "name": "Low Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "lowKick": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Meditate": {
+        "name": "Meditate",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "attack": {
+                        "chance": 1,
+                        "increase": 1
+                    }
+                }
+            }
+        }
+    },
+    "Mega Drain": {
+        "name": "Mega Drain",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "healing": {
+                "damageDealt": 0.5
+            },
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Mega Kick": {
+        "name": "Mega Kick",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 0.75,
+        "pp": 5,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Mega Punch": {
+        "name": "Mega Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.85,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Metronome": {
+        "name": "Metronome",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 10,
+        "effects": {
+            "metronome": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Mimic": {
+        "name": "Mimic",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 10,
+        "effects": {
+            "mimic": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Minimize": {
+        "name": "Minimize",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "evasion": {
+                        "chance": 1,
+                        "increase": 1
+                    }
+                }
+            }
+        }
+    },
+    "Mirror Move": {
+        "name": "Mirror Move",
+        "type": "Flying",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "mirrorMove": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Mist": {
+        "name": "Mist",
+        "type": "Ice",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "immunity": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Night Shade": {
+        "name": "Night Shade",
+        "type": "Ghost",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "damage": {
+                "fixed": "level"
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Pay Day": {
+        "name": "Pay Day",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Peck": {
+        "name": "Peck",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 35,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Petal Dance": {
+        "name": "Petal Dance",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "multiTurn": {
+                "3": 0.5,
+                "4": 0.5
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Pin Missile": {
+        "name": "Pin Missile",
+        "type": "Bug",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 14,
+        "accuracy": 0.85,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "hits": {
+                    "2": 0.375,
+                    "3": 0.375,
+                    "4": 0.125,
+                    "5": 0.125
+                }
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Poison Gas": {
+        "name": "Poison Gas",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.55,
+        "pp": 40,
+        "effects": {
+            "status": {
+                "poision": {
+                    "chance": 1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Poison Powder": {
+        "name": "Poison Powder",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.75,
+        "pp": 35,
+        "effects": {
+            "status": {
+                "poison": {
+                    "chance": 1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Poison Sting": {
+        "name": "Poison Sting",
+        "type": "Poison",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "status": {
+                "poison": {
+                    "chance": 0.3
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Pound": {
+        "name": "Pound",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Psybeam": {
+        "name": "Psybeam",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "status": {
+                "confusion": 0.1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Psychic": {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 0.8,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "special": {
+                        "chance": 0.3,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Psywave": {
+        "name": "Psywave",
+        "type": "Psychic",
+        "category": "Special",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "psywave": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Quick Attack": {
+        "name": "Quick Attack",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 30,
+        "priority": 1,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Rage": {
+        "name": "Rage",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "rage": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Razor Leaf": {
+        "name": "Razor Leaf",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 55,
+        "accuracy": 0.95,
+        "pp": 25,
+        "effects": {
+            "critical": 0.125,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Razor Wind": {
+        "name": "Razor Wind",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.75,
+        "pp": 10,
+        "effects": {
+            "charge": true,
+            "critChance": 0.125,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Recover": {
+        "name": "Recover",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": {
+                "chance": 1,
+                "percentage": 0.5
+            },
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Reflect": {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "fieldEffect": {
+                "attack": {
+                    "reduce": 0.5,
+                    "turns": 5
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Rest": {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 10,
+        "effects": {
+            "status": {
+                "sleep": true
+            },
+            "healing": {
+                "chance": 1,
+                "percentage": 1
+            },
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Roar": {
+        "name": "Roar",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "forceSwap": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Rock Slide": {
+        "name": "Rock Slide",
+        "type": "Rock",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 0.9,
+        "pp": 10,
+        "effects": {
+            "flinch": 0.3,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Rock Throw": {
+        "name": "Rock Throw",
+        "type": "Rock",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": 0.65,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Rolling Kick": {
+        "name": "Rolling Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": 0.85,
+        "pp": 15,
+        "effects": {
+            "flinch": 0.3,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Sand Attack": {
+        "name": "Sand Attack",
+        "type": "Ground",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "accuracy": {
+                        "chance": 1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Scratch": {
+        "name": "Scratch",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Screech": {
+        "name": "Screech",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.85,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "defense": {
+                        "chance": 1,
+                        "reduce": 2
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Seismic Toss": {
+        "name": "Seismic Toss",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "damage": {
+                "fixed": "level"
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Self-Destruct": {
+        "name": "Self-Destruct",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 130,
+        "accuracy": 1.0,
+        "pp": 5,
+        "effects": {
+            "selfHarm": {
+                "percentage": 1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Sharpen": {
+        "name": "Sharpen",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "attack": {
+                        "chance": 1,
+                        "increase": 1
+                    }
+                }
+            }
+        }
+    },
+    "Sing": {
+        "name": "Sing",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.55,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "opponent": {
+                    "sleep": true
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Skull Bash": {
+        "name": "Skull Bash",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 100,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "charge": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "defense": {
+                        "chance": 1,
+                        "increase": 1
+                    }
+                }
+            }
+        }
+    },
+    "Sky Attack": {
+        "name": "Sky Attack",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 140,
+        "accuracy": 0.9,
+        "pp": 5,
+        "effects": {
+            "charge": true,
+            "flinch": 0.3,
+            "critChance": 0.3,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Slam": {
+        "name": "Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.75,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Slash": {
+        "name": "Slash",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 70,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "critChance": 0.125,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Sleep Powder": {
+        "name": "Sleep Powder",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.75,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "sleep": 1
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Sludge": {
+        "name": "Sludge",
+        "type": "Physical",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "status": {
+                "poison": 0.3
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Smog": {
+        "name": "Smog",
+        "type": "Physical",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 0.7,
+        "pp": 20,
+        "effects": {
+            "status": {
+                "poison": 0.4
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Smokescreen": {
+        "name": "Smokescreen",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "accuracy": {
+                        "chance": 1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Soft-Boiled": {
+        "name": "Soft-Boiled",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 5,
+        "effects": {
+            "healing": {
+                "percentage": 0.5
+            },
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Solar Beam": {
+        "name": "Solar Beam",
+        "type": "Grass",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "charge": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Sonic Boom": {
+        "name": "Sonic Boom",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.9,
+        "pp": 20,
+        "effects": {
+            "damage": {
+                "fixed": 20
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Spike Cannon": {
+        "name": "Spike Cannon",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 20,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": {
+                "hits": {
+                    "2": 0.375,
+                    "3": 0.375,
+                    "4": 0.125,
+                    "5": 0.125
+                }
+            },
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Splash": {
+        "name": "Splash",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Spore": {
+        "name": "Spore",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "sleep": {
+                    "chance": 1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Stomp": {
+        "name": "Stomp",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 65,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "flinch": 0.3,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Strength": {
+        "name": "Strength",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "String Shot": {
+        "name": "String Shot",
+        "type": "Bug",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.95,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "speed": {
+                        "chance": 1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Struggle": {
+        "name": "Struggle",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 50,
+        "accuracy": false,
+        "pp": "N/A",
+        "effects": {
+            "recoil": {
+                "damageDealt": 0.5
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Stun Spore": {
+        "name": "Stun Spore",
+        "type": "Grass",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.75,
+        "pp": 30,
+        "effects": {
+            "status": {
+                "target": {
+                    "paralyze": 1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Submission": {
+        "name": "Submission",
+        "type": "Fighting",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 0.8,
+        "pp": 25,
+        "effects": {
+            "recoil": {
+                "damageDealt": 0.25
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Substitute": {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 10,
+        "effects": {
+            "substitute": true,
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Super Fang": {
+        "name": "Super Fang",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.9,
+        "pp": 10,
+        "effects": {
+            "damage": {
+                "fixed": {
+                    "opponentHealth": 0.5
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Supersonic": {
+        "name": "Supersonic",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.55,
+        "pp": 20,
+        "effects": {
+            "status": {
+                "opponent": {
+                    "confusion": true
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Surf": {
+        "name": "Surf",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 95,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Swift": {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": true,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Swords Dance": {
+        "name": "Swords Dance",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": {
+                    "attack": {
+                        "chance": 1,
+                        "increase": 2
+                    }
+                }
+            }
+        }
+    },
+    "Tackle": {
+        "name": "Tackle",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 35,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Tail Whip": {
+        "name": "Tail Whip",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": {
+                    "defense": {
+                        "chance": 1,
+                        "reduce": 1
+                    }
+                },
+                "user": false
+            }
+        }
+    },
+    "Take Down": {
+        "name": "Take Down",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 0.85,
+        "pp": 20,
+        "effects": {
+            "recoil": {
+                "damageDealt": 0.25
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Teleport": {
+        "name": "Teleport",
+        "type": "Psychic",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Thrash": {
+        "name": "Thrash",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 90,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "status": {
+                "confusion": true
+            },
+            "multiTurn": {
+                "3": 0.5,
+                "4": 0.5
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Thunder": {
+        "name": "Thunder",
+        "type": "Electric",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 120,
+        "accuracy": 0.7,
+        "pp": 10,
+        "effects": {
+            "status": {
+                "opponent": {
+                    "paralyze": 0.1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Thunder Punch": {
+        "name": "Thunder Punch",
+        "type": "Electric",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 75,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "status": {
+                "opponent": {
+                    "paralyze": 0.1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Thunder Shock": {
+        "name": "Thunder Shock",
+        "type": "Electric",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "status": {
+                "opponent": {
+                    "paralyze": 0.1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Thunder Wave": {
+        "name": "Thunder Wave",
+        "type": "Electric",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 1,
+        "pp": 20,
+        "effects": {
+            "status": {
+                "opponent": {
+                    "paralyze": 0.1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Thunderbolt": {
+        "name": "Thunderbolt",
+        "type": "Electric",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 95,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Toxic": {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": 0.85,
+        "pp": 10,
+        "effects": {
+            "status": {
+                "opponent": {
+                    "badly-poisoned": 1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Transform": {
+        "name": "Transform",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 10,
+        "effects": {
+            "status": {
+                "user": {
+                    "transform": 1
+                }
+            },
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Tri Attack": {
+        "name": "Tri Attack",
+        "type": "Normal",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": 10,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Twineedle": {
+        "name": "Twineedle",
+        "type": "Bug",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 25,
+        "accuracy": 1.0,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Vine Whip": {
+        "name": "Vine Whip",
+        "type": "Grass",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 45,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Vise Grip": {
+        "name": "Vise Grip",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 55,
+        "accuracy": 1.0,
+        "pp": 30,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Water Gun": {
+        "name": "Water Gun",
+        "type": "Water",
+        "category": "Special",
+        "target": "Opponent",
+        "power": 40,
+        "accuracy": 1.0,
+        "pp": 25,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Waterfall": {
+        "name": "Waterfall",
+        "type": "Water",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 80,
+        "accuracy": 1.0,
+        "pp": 15,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Whirlwind": {
+        "name": "Whirlwind",
+        "type": "Normal",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Wing Attack": {
+        "name": "Wing Attack",
+        "type": "Flying",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 60,
+        "accuracy": 1.0,
+        "pp": 35,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Withdraw": {
+        "name": "Withdraw",
+        "type": "Water",
+        "category": "Status",
+        "target": "Opponent",
+        "power": false,
+        "accuracy": false,
+        "pp": 40,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    },
+    "Wrap": {
+        "name": "Wrap",
+        "type": "Normal",
+        "category": "Physical",
+        "target": "Opponent",
+        "power": 15,
+        "accuracy": 0.9,
+        "pp": 20,
+        "effects": {
+            "healing": false,
+            "multiHit": false,
+            "alwaysHit": false,
+            "statChanges": {
+                "target": false,
+                "user": false
+            }
+        }
+    }
+}
