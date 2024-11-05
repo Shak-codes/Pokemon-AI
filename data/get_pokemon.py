@@ -128,4 +128,4 @@ def get_stats():
     json.dump(pokemon_data, f, indent=4)
 
 
-get_all_moves()
+get_stats()
