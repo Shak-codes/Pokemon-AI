@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+f = open("data/pokemon.json", "w")
+
 
 class Move:
     def __init__(self, name, level):
@@ -43,9 +45,10 @@ def get_moveset(pokemon: str):
                 continue
         name = row[i+1].find('span').decode_contents()
         # print(f"{level_learned} - {name} - {type} - {power} - {acc} - {pp}")
-        move_obj = Move(name, level_learned)
+        move_obj = Move(name, 10, 10, level_learned)
         moveset.append(move_obj)
         move_obj.print_move()
+    return moveset
 
 
 def get_stats():
@@ -68,7 +71,8 @@ def get_stats():
         spatk = data[5].contents[0].strip('\n')
         print(
             f"{name} - hp: {hp} - atk: {atk} - def: {de} - spd: {spd} - spatk: {spatk}")
-        get_moveset(name)
+        moveset = get_moveset(name)
+
         if name == 'Mew':
             break
 
