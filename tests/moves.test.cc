@@ -1,8 +1,13 @@
 #include <cassert>
+#include <fstream>
+#include <iostream>
 #include <string>
 
+#include "../lib/json.hpp"
 #include "../pokemon/constants/enums.h"
 #include "../pokemon/moves/move.h"
+
+using json = nlohmann::json;
 
 int main() {
   Effect no_effect = Effect::NONE;
@@ -26,6 +31,29 @@ int main() {
   assert(status_move.getEffect() == Effect::STATUS && ("Success! (status)"));
   assert(status_move.pureStatus() == false && ("Success! (non pure-status)"));
   assert(pure_status_move.pureStatus() == true && ("Success! (pure-status)"));
+
+  std::ifstream file("../data/moves.json");
+
+  if (!file.is_open()) {
+    std::cerr << "Failed to open file" << std::endl;
+    return 1;
+  }
+
+  // Parse the JSON file
+  json moveData;
+  file >> moveData;
+
+  // Close the file
+  file.close();
+
+  // Iterate through each key-value pair
+  for (auto& [key, value] : moveData.items()) {
+    std::cout << "Move: " << key << std::endl;
+    std::cout << "Type: " << value["type"] << " Category: " << value["category"]
+              << " Target: " << value["target"] << " Power: " << value["power"]
+              << " Accuracy: " << value["accuracy"] << " PP: " << value["pp"]
+              << std::endl;
+  }
 
   return 0;
 }

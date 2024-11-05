@@ -13,7 +13,7 @@ class Move {
   int pp;
 
  public:
-  Move(const std::string& name, Type type, int dmg, int pp, Effect effect);
+  Move(const std::string& name, Type type, int dmg, int pp);
   Type getType() const;
   std::string getName() const;
   int getDamage() const;

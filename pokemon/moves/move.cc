@@ -3,8 +3,8 @@
 
 #include "../constants/enums.h"
 
-Move::Move(const std::string& name, Type type, int dmg, int pp, Effect effect)
-    : name(name), type(type), dmg(dmg), pp(pp), effect(effect) {}
+Move::Move(const std::string& name, Type type, int dmg, int pp)
+    : name(name), type(type), dmg(dmg), pp(pp) {}
 
 std::string Move::getName() const { return name; }
 
