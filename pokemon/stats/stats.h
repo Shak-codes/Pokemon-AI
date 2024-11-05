@@ -12,7 +12,7 @@ class Stats {
 
  public:
   Stats(int hpValue, int atkValue, int defValue, int speValue, int spdValue);
-  int getStat(const std::string& statName) const;
+  int getStat(std::string statName) const;
 };
 
 #endif

@@ -4,7 +4,7 @@ Stats::Stats(int hpValue, int atkValue, int defValue, int speValue,
              int spdValue)
     : hp(hpValue), atk(atkValue), def(defValue), spe(speValue), spd(spdValue) {}
 
-int Stats::getStat(const std::string& statName) const {
+int Stats::getStat(std::string statName) const {
   if (statName == "hp")
     return hp;
   else if (statName == "atk")

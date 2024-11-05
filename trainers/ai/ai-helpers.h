@@ -6,13 +6,16 @@
 #include <functional>
 #include <vector>
 
+#include "../../pokemon/constants/type-matchups.h"
+#include "../../pokemon/moves/move.h"
+#include "../../pokemon/pokemon.h"
 #include "../constants/enums.h"
-#include "../constants/type-matchups.h"
-#include "../move.h"
-#include "../pokemon.h"
 
-void modification1(std::vector<Move> moves, std::vector<int> priority,
-                   Pokemon* user, Pokemon* opponent) {
+using Mod = std::function<void(std::vector<Move>, std::vector<int>, Pokemon*,
+                               Pokemon*)>;
+
+void mod1(std::vector<Move> moves, std::vector<int> priority, Pokemon* user,
+          Pokemon* opponent) {
   int idx = 0;
   for (auto& move : moves) {
     if (move.pureStatus() && opponent->getStatus() != Status::NONE) {
@@ -22,8 +25,8 @@ void modification1(std::vector<Move> moves, std::vector<int> priority,
   }
 }
 
-void modification2(std::vector<Move> moves, std::vector<int> priority,
-                   Pokemon* user, Pokemon* opponent) {
+void mod2(std::vector<Move> moves, std::vector<int> priority, Pokemon* user,
+          Pokemon* opponent) {
   int idx = 0;
   for (auto& move : moves) {
     if (move.getEffect() != Effect::NONE) {
@@ -33,8 +36,8 @@ void modification2(std::vector<Move> moves, std::vector<int> priority,
   }
 }
 
-void modification3(std::vector<Move> moves, std::vector<int> priority,
-                   Pokemon* user, Pokemon* opponent) {
+void mod3(std::vector<Move> moves, std::vector<int> priority, Pokemon* user,
+          Pokemon* opponent) {
   int idx = 0;
   for (auto& move : moves) {
     Type atkType = move.getType();
@@ -52,15 +55,11 @@ void modification3(std::vector<Move> moves, std::vector<int> priority,
   }
 }
 
-std::vector<std::function<void(std::vector<Move>, std::vector<int>, Pokemon*,
-                               Pokemon*)>>
-determineModifications(TrainerClass trainerClass) {
-  std::vector<std::function<void(std::vector<Move>, std::vector<int>, Pokemon*,
-                                 Pokemon*)>>
-      modifications;
+std::vector<Mod> getMods(TrainerClass trainerClass) {
+  std::vector<Mod> modifications;
   if (trainerClass != TrainerClass::Youngster &&
       trainerClass != TrainerClass::CueBall) {
-    modifications.push_back(modification1);
+    modifications.push_back(mod1);
     std::cout << "Trainer " << TrainerClassNames[static_cast<int>(trainerClass)]
               << " has modification 1" << std::endl;
   }
@@ -71,7 +70,7 @@ determineModifications(TrainerClass trainerClass) {
       trainerClass == TrainerClass::Scientist ||
       trainerClass == TrainerClass::Gentleman ||
       trainerClass == TrainerClass::Lorelei) {
-    modifications.push_back(modification2);
+    modifications.push_back(mod2);
     std::cout << "Trainer " << TrainerClassNames[static_cast<int>(trainerClass)]
               << " has modification 2" << std::endl;
   }
@@ -95,7 +94,7 @@ determineModifications(TrainerClass trainerClass) {
       trainerClass == TrainerClass::Rival3 ||
       trainerClass == TrainerClass::Lorelei ||
       trainerClass == TrainerClass::Lance) {
-    modifications.push_back(modification3);
+    modifications.push_back(mod3);
     std::cout << "Trainer " << TrainerClassNames[static_cast<int>(trainerClass)]
               << " has modification 3" << std::endl;
   }
