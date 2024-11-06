@@ -17,14 +17,21 @@ std::string Move::getName() const { return name; }
 
 Type Move::getType() const { return type; }
 
-int Move::getDamage() const { return power; }
+Category Move::getCat() const { return category; }
+
+Target Move::getTarget() const { return target; }
+
+int Move::getPwr() const { return power; }
+
+float Move::getAcc() const { return accuracy; }
 
 int Move::getPP() const { return pp; }
 
-Effect Move::getEffect() const { return effect; }
+// Effect Move::getEffect() const { return effect; }
 
-bool Move::pureStatus() const { return effect == Effect::STATUS && power == 0; }
+// bool Move::pureStatus() const { return effect == Effect::STATUS && power ==
+// 0; }
 
-bool Move::isBuff() const { return effect == Effect::BUFF; }
+// bool Move::isBuff() const { return effect == Effect::BUFF; }
 
-bool Move::isDebuff() const { return effect == Effect::DEBUFF; }
+// bool Move::isDebuff() const { return effect == Effect::DEBUFF; }

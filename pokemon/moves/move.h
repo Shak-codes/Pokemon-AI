@@ -18,14 +18,17 @@ class Move {
  public:
   Move(const std::string& name, Type type, Category category, Target target,
        int power, float accuracy, int pp);
-  Type getType() const;
   std::string getName() const;
-  int getDamage() const;
+  Type getType() const;
+  Category getCat() const;
+  Target getTarget() const;
+  int getPwr() const;
+  float getAcc() const;
   int getPP() const;
-  Effect getEffect() const;
-  bool pureStatus() const;
-  bool isBuff() const;
-  bool isDebuff() const;
+  // Effect getEffect() const;
+  // bool pureStatus() const;
+  // bool isBuff() const;
+  // bool isDebuff() const;
 };
 
 #endif
