@@ -23,5 +23,7 @@ enum class Type {
   Steel,
   Fairy
 };
+enum class Category { Physical, Special, None };
+enum class Target { Opponent, Self };
 
 #endif

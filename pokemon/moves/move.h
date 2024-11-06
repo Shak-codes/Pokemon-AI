@@ -6,14 +6,18 @@
 #include "../constants/enums.h"
 
 class Move {
-  Effect effect;
-  Type type;
   std::string name;
-  int dmg;
+  Type type;
+  Category category;
+  Target target;
+  int power;
+  float accuracy;
   int pp;
+  Effect effect;
 
  public:
-  Move(const std::string& name, Type type, int dmg, int pp);
+  Move(const std::string& name, Type type, Category category, Target target,
+       int power, float accuracy, int pp);
   Type getType() const;
   std::string getName() const;
   int getDamage() const;
