@@ -2538,7 +2538,7 @@
     },
     "Sludge": {
         "name": "Sludge",
-        "type": "Physical",
+        "type": "Poison",
         "category": "Special",
         "target": "Opponent",
         "power": 65,
@@ -2559,7 +2559,7 @@
     },
     "Smog": {
         "name": "Smog",
-        "type": "Physical",
+        "type": "Poison",
         "category": "Special",
         "target": "Opponent",
         "power": 20,
@@ -2794,7 +2794,7 @@
         "target": "Opponent",
         "power": 50,
         "accuracy": false,
-        "pp": "N/A",
+        "pp": false,
         "effects": {
             "recoil": {
                 "damageDealt": 0.5

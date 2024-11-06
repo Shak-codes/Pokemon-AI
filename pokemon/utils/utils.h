@@ -1,9 +1,16 @@
 #ifndef UTILS
 #define UTILS
 
-#include "../moves/move.h"  // Include Move class if needed
+#include "../../lib/json.hpp"
+#include "../constants/enums.h"
+#include "../moves/move.h"
 
-// Declaration of the helper function
-bool doesMoveHit(const Move& move, float accuracyModifier = 1.0);
+using json = nlohmann::json;
+
+bool doesMoveHit(const Move& move);
+
+Move createMoveFromJson(const json& moveData);
+
+Type stringToType(const std::string& type);
 
 #endif

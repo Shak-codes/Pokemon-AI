@@ -4,14 +4,15 @@
 #include "../constants/enums.h"
 
 Move::Move(const std::string& name, Type type, Category category, Target target,
-           int power, float accuracy, int pp)
+           int power, float accuracy, int pp, bool special)
     : name(name),
       type(type),
       category(category),
       target(target),
       power(power),
       accuracy(accuracy),
-      pp(pp) {}
+      pp(pp),
+      special(special) {}
 
 std::string Move::getName() const { return name; }
 
@@ -26,6 +27,8 @@ int Move::getPwr() const { return power; }
 float Move::getAcc() const { return accuracy; }
 
 int Move::getPP() const { return pp; }
+
+bool Move::getSpecial() const { return special; }
 
 // Effect Move::getEffect() const { return effect; }
 

@@ -54,6 +54,7 @@
                 "-g",
                 "${workspaceFolder}\\tests\\moves.test.cc",
                 "${workspaceFolder}\\pokemon\\moves\\move.cc",
+                "${workspaceFolder}\\pokemon\\utils\\utils.cc",
                 "-o",
                 "${workspaceFolder}\\tests\\moves.test.exe"
             ],
