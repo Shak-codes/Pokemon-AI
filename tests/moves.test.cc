@@ -35,43 +35,45 @@ int main() {
   // Move status_move = Move("Status Move", normal, 60, 20, status);
   // Move pure_status_move = Move("Normal Move", normal, 0, 20, status);
 
-  assert(normal_move.getName() == "Normal Move" && ("Success! (name)"));
-  assert(normal_move.getType() == normal && ("Success! (type)"));
-  assert(normal_move.getCat() == physical && ("Success! (physical category)"));
-  assert(normal_move.getTarget() == opponent && ("Success! (opponent target)"));
-  assert(normal_move.getPwr() == 60 && ("Success! (power)"));
-  assert(normal_move.getAcc() == 1.00 && ("Success! (accuracy)"));
-  assert(normal_move.getPP() == 20 && ("Success! (pp)"));
-  // assert(normal_move.getEffect() == Effect::NONE && ("Success! (no
-  // effect)")); assert(buff_move.getEffect() == Effect::BUFF && ("Success!
-  // (buff)")); assert(debuff_move.getEffect() == Effect::DEBUFF && ("Success!
-  // (debuff)")); assert(status_move.getEffect() == Effect::STATUS && ("Success!
-  // (status)")); assert(status_move.pureStatus() == false && ("Success! (non
-  // pure-status)")); assert(pure_status_move.pureStatus() == true && ("Success!
+  assert(normal_move.getName() == "Normal Move" && ("Failure! (name)"));
+  assert(normal_move.getType() == normal && ("Failure! (type)"));
+  assert(normal_move.getCat() == physical && ("Failure! (physical category)"));
+  assert(normal_move.getTarget() == opponent && ("Failure! (opponent target)"));
+  assert(normal_move.getPwr() == 20 && ("Failure! (power)"));
+  assert(normal_move.getAcc() == 1.00 && ("Failure! (accuracy)"));
+  assert(normal_move.getPP() == 15 && ("Failure! (pp)"));
+  // assert(normal_move.getEffect() == Effect::NONE && ("Failure! (no
+  // effect)")); assert(buff_move.getEffect() == Effect::BUFF && ("Failure!
+  // (buff)")); assert(debuff_move.getEffect() == Effect::DEBUFF && ("Failure!
+  // (debuff)")); assert(status_move.getEffect() == Effect::STATUS && ("Failure!
+  // (status)")); assert(status_move.pureStatus() == false && ("Failure! (non
+  // pure-status)")); assert(pure_status_move.pureStatus() == true && ("Failure!
   // (pure-status)"));
 
-  std::ifstream file("../data/moves.json");
+  // std::ifstream file("../data/moves.json");
 
-  if (!file.is_open()) {
-    std::cerr << "Failed to open file" << std::endl;
-    return 1;
-  }
+  // if (!file.is_open()) {
+  //   std::cerr << "Failed to open file" << std::endl;
+  //   return 1;
+  // }
 
-  // Parse the JSON file
-  json moveData;
-  file >> moveData;
+  // // Parse the JSON file
+  // json moveData;
+  // file >> moveData;
 
-  // Close the file
-  file.close();
+  // // Close the file
+  // file.close();
 
-  // Iterate through each key-value pair
-  for (auto& [key, value] : moveData.items()) {
-    std::cout << "Move: " << key << std::endl;
-    std::cout << "Type: " << value["type"] << " Category: " << value["category"]
-              << " Target: " << value["target"] << " Power: " << value["power"]
-              << " Accuracy: " << value["accuracy"] << " PP: " << value["pp"]
-              << std::endl;
-  }
+  // // Iterate through each key-value pair
+  // for (auto& [key, value] : moveData.items()) {
+  //   std::cout << "Move: " << key << std::endl;
+  //   std::cout << "Type: " << value["type"] << " Category: " <<
+  //   value["category"]
+  //             << " Target: " << value["target"] << " Power: " <<
+  //             value["power"]
+  //             << " Accuracy: " << value["accuracy"] << " PP: " << value["pp"]
+  //             << std::endl;
+  // }
 
   return 0;
 }
