@@ -1,19 +1,31 @@
 #include "../pokemon/stats/stats.h"
 
 #include <cassert>
-#include <string>
+#include <iostream>
+
+#include "../lib/json.hpp"
+
+using json = nlohmann::json;
 
 int main() {
-  Stats pokemon_stats = Stats(50, 40, 30, 20, 10);
-  int hp = pokemon_stats.getStat("hp");
-  int atk = pokemon_stats.getStat("atk");
-  int def = pokemon_stats.getStat("def");
-  int spe = pokemon_stats.getStat("spe");
-  int spd = pokemon_stats.getStat("spd");
+  json baseStats = {
+      {"hp", "45"}, {"atk", "49"}, {"def", "49"}, {"spe", "45"}, {"spd", "65"}};
 
-  assert(hp == 50 && ("Success! (hp stat)"));
-  assert(atk == 40 && ("Success! (hp stat)"));
-  assert(def == 30 && ("Success! (hp stat)"));
-  assert(spe == 20 && ("Success! (hp stat)"));
-  assert(spd == 10 && ("Success! (hp stat)"));
+  int level = 50;
+  Stats stats(baseStats, level);
+
+  int expectedHealth = (((45 + 8) * 2 * level) / 100) + level + 10;
+  int expectedAttack = (((49 + 9) * 2) * level) / 100 + 5;
+  int expectedDefense = (((49 + 8) * 2 * level) / 100) + 5;
+  int expectedSpeed = (((45 + 8) * 2 * level) / 100) + 5;
+  int expectedSpecial = (((65 + 8) * 2 * level) / 100) + 5;
+
+  assert(stats.getHealth() == expectedHealth && "Health calculation failed");
+  assert(stats.getAttack() == expectedAttack && "Attack calculation failed");
+  assert(stats.getDefense() == expectedDefense && "Defense calculation failed");
+  assert(stats.getSpeed() == expectedSpeed && "Speed calculation failed");
+  assert(stats.getSpecial() == expectedSpecial && "Special calculation failed");
+
+  std::cout << "All Stats tests passed!" << std::endl;
+  return 0;
 }

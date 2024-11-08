@@ -70,6 +70,28 @@
             }
         },
         {
+            "label": "test mods",
+            "type": "cppbuild",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\tests\\mods.test.cc",
+                "${workspaceFolder}\\pokemon\\stats\\mods\\mods.cc",
+                "-o",
+                "${workspaceFolder}\\tests\\mods.test.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
             "label": "test stats",
             "type": "cppbuild",
             "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
@@ -84,13 +106,15 @@
                 "kind": "build",
                 "isDefault": false
             },
-            "problemMatcher": [ 
+            "problemMatcher": [
                 "$gcc"
             ],
             "presentation": {
                 "reveal": "always"
             }
         }
+
+
     ]
 }
 
