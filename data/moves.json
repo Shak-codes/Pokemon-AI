@@ -1816,7 +1816,9 @@
         "pp": 15,
         "effects": {
             "damage": {
-                "fixed": "level"
+                "fixed": {
+                    "type": "level"
+                }
             },
             "healing": false,
             "multiHit": false,
@@ -2355,7 +2357,9 @@
         "pp": 20,
         "effects": {
             "damage": {
-                "fixed": "level"
+                "fixed": {
+                    "type": "level"
+                }
             },
             "healing": false,
             "multiHit": false,
@@ -2650,7 +2654,10 @@
         "pp": 20,
         "effects": {
             "damage": {
-                "fixed": 20
+                "fixed": {
+                    "type": "constant",
+                    "value": 20
+                }
             },
             "healing": false,
             "multiHit": false,
@@ -2882,7 +2889,8 @@
         "effects": {
             "damage": {
                 "fixed": {
-                    "opponentHealth": 0.5
+                    "type": "opponentHealth",
+                    "value": 0.5
                 }
             },
             "healing": false,
