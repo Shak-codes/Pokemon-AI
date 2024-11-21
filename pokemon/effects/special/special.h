@@ -9,15 +9,14 @@ using json = nlohmann::json;
 
 class Special {
  private:
-  enum LingeringEffect { NONE, LEECH_SEED, WRAP, BIND };
   enum ChargeMove { NONE, BIDE, OTHER };
   enum CopyMove { NONE, MIRROR_MOVE, MIMIC };
   Multistrike multistrike;
   Fixed fixed;
   Recoil recoil;
-  LingeringEffect linger = NONE;
   ChargeMove chargeMove = ChargeMove::NONE;
   CopyMove copy = CopyMove::NONE;
+  bool linger = false;
   bool alwaysHit = false;
   bool drain = false;
   bool ohko = false;
@@ -31,6 +30,7 @@ class Special {
   bool haze = false;  // Should be in stat change section
   bool recharge = false;
   bool metronome = false;
+  bool dreamEater = false;
 
  public:
   Special() = default;

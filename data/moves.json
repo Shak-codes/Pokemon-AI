@@ -518,7 +518,7 @@
     "accuracy": 1,
     "pp": 10,
     "effects": {
-      "damage": 40
+      "fixed": 40
     }
   },
   "Dream Eater": {
@@ -530,8 +530,8 @@
     "accuracy": 1,
     "pp": 15,
     "effects": {
-      "dreamEater": true,
-      "healing": {
+      "special": "dream_eater",
+      "drain": {
         "damageDealt": 0.5
       }
     }
@@ -554,9 +554,7 @@
     "power": 100,
     "accuracy": 1,
     "pp": 10,
-    "effects": {
-      "earthquake": true
-    }
+    "effects": {}
   },
   "Egg Bomb": {
     "name": "Egg Bomb",
@@ -591,7 +589,7 @@
     "accuracy": 1,
     "pp": 5,
     "effects": {
-      "explosion": true
+      "special": "explosion"
     }
   },
   "Fire Blast": {
@@ -631,12 +629,7 @@
     "accuracy": 0.7,
     "pp": 15,
     "effects": {
-      "multiTurn": {
-        "2": 0.375,
-        "3": 0.375,
-        "4": 0.125,
-        "5": 0.125
-      }
+      "special": "linger"
     }
   },
   "Fissure": {
@@ -648,7 +641,7 @@
     "accuracy": 0.3,
     "pp": 5,
     "effects": {
-      "fissure": true
+      "special": "ohko"
     }
   },
   "Flamethrower": {
@@ -693,9 +686,7 @@
     "accuracy": 0.95,
     "pp": 15,
     "effects": {
-      "invulnerability": {
-        "fly": true
-      }
+      "special": "semiInv"
     }
   },
   "Focus Energy": {
@@ -719,12 +710,7 @@
     "accuracy": 0.85,
     "pp": 20,
     "effects": {
-      "multiHit": {
-        "2": 0.375,
-        "3": 0.375,
-        "4": 0.125,
-        "5": 0.125
-      }
+      "special": "multistrike"
     }
   },
   "Fury Swipes": {
@@ -736,12 +722,7 @@
     "accuracy": 0.8,
     "pp": 15,
     "effects": {
-      "multiHit": {
-        "2": 0.375,
-        "3": 0.375,
-        "4": 0.125,
-        "5": 0.125
-      }
+      "special": "multistrike"
     }
   },
   "Glare": {
@@ -949,7 +930,7 @@
     "pp": 20,
     "effects": {
       "status": {
-        "sleep": true
+        "sleep": 1
       }
     }
   },
