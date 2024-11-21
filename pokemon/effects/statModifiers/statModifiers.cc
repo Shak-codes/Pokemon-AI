@@ -4,31 +4,30 @@
 
 using json = nlohmann::json;
 
-StatModifiers::StatModifiers(const json& mods) {}
+StatModifiers::StatModifiers(const json& mods) {
+  for (const auto& [key, value] : mods.items()) {
+    if (value.contains("chance") && value.contains("value")) {
+      chances[key] = value["chance"].get<float>();
+      modifiers[key] = value["value"].get<int>();
+    }
+  }
+}
 
-bool StatModifiers::getHasMods() const { return hasMods; }
-void StatModifiers::setHasMods(bool value) { hasMods = value; }
+int StatModifiers::getMod(const std::string& key) const {
+  auto it = modifiers.find(key);
+  return it != modifiers.end() ? it->second : 0;
+}
 
-int StatModifiers::getAttackMod() const { return attackMod; }
-void StatModifiers::setAttackMod(int value) { attackMod = value; }
+float StatModifiers::getChance(const std::string& key) const {
+  auto it = chances.find(key);
+  return it != chances.end() ? it->second : 0.0f;
+}
 
-int StatModifiers::getDefenseMod() const { return defenseMod; }
-void StatModifiers::setDefenseMod(int value) { defenseMod = value; }
-
-int StatModifiers::getSpecialMod() const { return specialMod; }
-void StatModifiers::setSpecialMod(int value) { specialMod = value; }
-
-int StatModifiers::getSpeedMod() const { return speedMod; }
-void StatModifiers::setSpeedMod(int value) { speedMod = value; }
-
-float StatModifiers::getAttackChance() const { return attackChance; }
-void StatModifiers::setAttackChance(float value) { attackChance = value; }
-
-float StatModifiers::getDefenseChance() const { return defenseChance; }
-void StatModifiers::setDefenseChance(float value) { defenseChance = value; }
-
-float StatModifiers::getSpecialChance() const { return specialChance; }
-void StatModifiers::setSpecialChance(float value) { specialChance = value; }
-
-float StatModifiers::getSpeedChance() const { return speedChance; }
-void StatModifiers::setSpeedChance(float value) { speedChance = value; }
+bool StatModifiers::hasMods() const {
+  for (const auto& [key, value] : modifiers) {
+    if (value != 0) {
+      return true;
+    }
+  }
+  return false;
+}

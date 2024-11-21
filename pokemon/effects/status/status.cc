@@ -5,30 +5,24 @@
 using json = nlohmann::json;
 
 Status::Status(const json& status) {
-  this->burn = status.value("burn", 0.0f);
-  this->freeze = status.value("freeze", 0.0f);
-  this->paralysis = status.value("paralysis", 0.0f);
-  this->poison = status.value("poison", 0.0f);
-  this->badlyPoisoned = status.value("badlyPoisoned", 0.0f);
-  this->sleep = status.value("sleep", 0.0f);
-
-  this->active =
-      (this->burn > 0.0f || this->freeze > 0.0f || this->paralysis > 0.0f ||
-       this->poison > 0.0f || this->badlyPoisoned > 0.0f || this->sleep > 0.0f);
+  for (const auto& [key, value] : status.items()) {
+    statusEffects[key] = value.get<float>();
+  }
 }
 
-bool Status::isActive() const { return active; }
-float Status::getBurn() const { return burn; }
-float Status::getFreeze() const { return freeze; }
-float Status::getParalysis() const { return paralysis; }
-float Status::getPoison() const { return poison; }
-float Status::getBadlyPoisoned() const { return badlyPoisoned; }
-float Status::getSleep() const { return sleep; }
+bool Status::hasStatusEffects() const {
+  for (const auto& [key, value] : statusEffects) {
+    if (value > 0.0f) {
+      return true;
+    }
+  }
+  return false;
+}
 
-void Status::setActive(bool active) { this->active = active; }
-void Status::setBurn(float value) { burn = value; }
-void Status::setFreeze(float value) { freeze = value; }
-void Status::setParalysis(float value) { paralysis = value; }
-void Status::setPoison(float value) { poison = value; }
-void Status::setBadlyPoisoned(float value) { badlyPoisoned = value; }
-void Status::setSleep(float value) { sleep = value; }
+float Status::getStatusEffect(const std::string& key) const {
+  auto it = statusEffects.find(key);
+  if (it != statusEffects.end()) {
+    return it->second;
+  }
+  return 0.0f;
+}
