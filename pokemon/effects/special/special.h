@@ -9,28 +9,48 @@ using json = nlohmann::json;
 
 class Special {
  private:
-  enum ChargeMove { NONE, BIDE, OTHER };
-  enum CopyMove { NONE, MIRROR_MOVE, MIMIC };
+  enum ChargeMoves { NONE, BIDE, OTHER };
+  enum CopyMoves { NONE, MIRROR_MOVE, MIMIC };
+  enum CustomEffectMoves {
+    NONE,
+    PSYWAVE,
+    RAGE,
+    TRANSFORM,
+    DISABLE,
+    CONVERSION,
+    COUNTER,
+    METRONOME,
+    DREAM_EATER
+  };
+  enum MultistrikeMoves {
+    NONE,
+    DOUBLE_SLAP,
+    COMET_PUNCH,
+    FURY_ATTACK,
+    PIN_MISSILE,
+    SPIKE_CANNON,
+    BARRAGE,
+    BONE_CLUB,
+    TWINEEDLE,
+    DOUBLE_KICK
+  };
+  enum RecoilMoves { NONE, TAKE_DOWN, DOUBLE_EDGE, SUBMISSION };
+  enum LockedMoves { NONE, RAGE, THRASH, PETAL_DANCE };
+  enum LingerMoves { NONE, FIRE_SPIN, WRAP, CLAMP, BIND };
+  enum AlwaysHitMoves { NONE, SWIFT };
+  enum DrainingMoves { NONE, ABSORB, MEGA_DRAIN, LEECH_LIFE };
+  enum OHKOMoves { NONE, FISSURE, GUILLOTINE, HORN_DRILL };
+  enum SemiInvulnerableMoves { NONE, FLY, DIG };
+  enum ForceSwapMoves { NONE, ROAR, WHIRLWIND };
+  enum RechargeMove { NONE, HYPER_BEAM };
+
   Multistrike multistrike;
   Fixed fixed;
   Recoil recoil;
-  ChargeMove chargeMove = ChargeMove::NONE;
-  CopyMove copy = CopyMove::NONE;
-  bool linger = false;
-  bool alwaysHit = false;
-  bool drain = false;
-  bool ohko = false;
-  bool semiInv = false;
-  bool forceSwap = false;
-  bool rage = false;
-  bool transform = false;
-  bool disable = false;
-  bool conversion = false;
-  bool counter = false;
+  std::vector<std::string> specialFlags = {
+      "psywave",    "rage",    "transform", "disable",
+      "conversion", "counter", "metronome", "dreamEater"};
   bool haze = false;  // Should be in stat change section
-  bool recharge = false;
-  bool metronome = false;
-  bool dreamEater = false;
 
  public:
   Special() = default;

@@ -382,7 +382,7 @@
     "accuracy": 0.85,
     "pp": 10,
     "effects": {
-      "critChance": 0.125
+      "critical": 0.125
     }
   },
   "Cut": {
@@ -989,7 +989,7 @@
     "accuracy": 1,
     "pp": 25,
     "effects": {
-      "critChance": 0.125
+      "critical": 0.125
     }
   },
   "Kinesis": {
@@ -1036,7 +1036,7 @@
     "accuracy": 0.9,
     "pp": 10,
     "effects": {
-      "drain": true
+      "special": "drain"
     }
   },
   "Leer": {
@@ -1081,9 +1081,7 @@
     "accuracy": false,
     "pp": 30,
     "effects": {
-      "fieldEffect": {
-        "lightScreen": true
-      }
+      "fieldEffect": "lightscreen"
     }
   },
   "Lovely Kiss": {
@@ -1095,8 +1093,9 @@
     "accuracy": 0.75,
     "pp": 10,
     "effects": {
+      "special": "lovelyKiss",
       "status": {
-        "sleep": true
+        "sleep": 1
       }
     }
   },
@@ -1105,11 +1104,11 @@
     "type": "Fighting",
     "category": "Physical",
     "target": "Opponent",
-    "power": false,
-    "accuracy": 1,
+    "power": 50,
+    "accuracy": 0.9,
     "pp": 20,
     "effects": {
-      "lowKick": true
+      "flinch": 0.3
     }
   },
   "Meditate": {
@@ -1174,7 +1173,7 @@
     "accuracy": false,
     "pp": 10,
     "effects": {
-      "metronome": true
+      "special": "metronome"
     }
   },
   "Mimic": {
@@ -1186,7 +1185,7 @@
     "accuracy": false,
     "pp": 10,
     "effects": {
-      "mimic": true
+      "special": "mimic"
     }
   },
   "Minimize": {
@@ -1217,7 +1216,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "mirrorMove": true
+      "special": "mirrorMove"
     }
   },
   "Mist": {
@@ -1229,7 +1228,7 @@
     "accuracy": false,
     "pp": 30,
     "effects": {
-      "immunity": true
+      "fieldEffect": "mist"
     }
   },
   "Night Shade": {
@@ -1241,11 +1240,7 @@
     "accuracy": 1,
     "pp": 15,
     "effects": {
-      "damage": {
-        "fixed": {
-          "type": "level"
-        }
-      }
+      "fixed": "level"
     }
   },
   "Pay Day": {
@@ -1277,10 +1272,7 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "multiTurn": {
-        "3": 0.5,
-        "4": 0.5
-      }
+      "special": "locked"
     }
   },
   "Pin Missile": {
@@ -1292,14 +1284,7 @@
     "accuracy": 0.85,
     "pp": 20,
     "effects": {
-      "multiHit": {
-        "hits": {
-          "2": 0.375,
-          "3": 0.375,
-          "4": 0.125,
-          "5": 0.125
-        }
-      }
+      "special": "multistrike"
     }
   },
   "Poison Gas": {
@@ -1312,7 +1297,7 @@
     "pp": 40,
     "effects": {
       "status": {
-        "poision": {
+        "poison": {
           "chance": 1
         }
       }
@@ -1399,10 +1384,10 @@
     "category": "Special",
     "target": "Opponent",
     "power": false,
-    "accuracy": 1,
+    "accuracy": 0.8,
     "pp": 15,
     "effects": {
-      "psywave": true
+      "special": "psywave"
     }
   },
   "Quick Attack": {
@@ -1425,7 +1410,7 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "rage": true
+      "special": "rage"
     }
   },
   "Razor Leaf": {
@@ -1450,7 +1435,7 @@
     "pp": 10,
     "effects": {
       "charge": true,
-      "critChance": 0.125
+      "critical": 0.125
     }
   },
   "Recover": {
@@ -1477,12 +1462,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "fieldEffect": {
-        "attack": {
-          "value": -0.5,
-          "turns": 5
-        }
-      }
+      "fieldEffect": "reflect"
     }
   },
   "Rest": {
@@ -1512,7 +1492,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "forceSwap": true
+      "special": "forceSwap"
     }
   },
   "Rock Slide": {
@@ -1606,11 +1586,7 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "damage": {
-        "fixed": {
-          "type": "level"
-        }
-      }
+      "fixed": "level"
     }
   },
   "Self-Destruct": {
@@ -1622,7 +1598,7 @@
     "accuracy": 1,
     "pp": 5,
     "effects": {
-      "selfHarm": {
+      "recoil": {
         "percentage": 1
       }
     }
@@ -1693,7 +1669,7 @@
     "effects": {
       "charge": true,
       "flinch": 0.3,
-      "critChance": 0.3
+      "critical": 0.3
     }
   },
   "Slam": {
@@ -1715,7 +1691,7 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "critChance": 0.125
+      "critical": 0.125
     }
   },
   "Sleep Powder": {
@@ -1814,12 +1790,7 @@
     "accuracy": 0.9,
     "pp": 20,
     "effects": {
-      "damage": {
-        "fixed": {
-          "type": "constant",
-          "value": 20
-        }
-      }
+      "fixed": 20
     }
   },
   "Spike Cannon": {
@@ -1973,12 +1944,7 @@
     "accuracy": 0.9,
     "pp": 10,
     "effects": {
-      "damage": {
-        "fixed": {
-          "type": "opponentHealth",
-          "value": 0.5
-        }
-      }
+      "fixed": 0.5
     }
   },
   "Supersonic": {
