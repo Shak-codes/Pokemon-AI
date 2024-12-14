@@ -47,9 +47,39 @@ class Special {
   Multistrike multistrike;
   Fixed fixed;
   Recoil recoil;
-  std::vector<std::string> specialFlags = {
+  std::vector<std::string> chargeFlags = {"none", "bide", "other"};
+
+  std::vector<std::string> copyFlags = {"none", "mirrorMove", "mimic"};
+  std::vector<std::string> customFlags = {
       "psywave",    "rage",    "transform", "disable",
       "conversion", "counter", "metronome", "dreamEater"};
+
+  std::vector<std::string> multistrikeFlags = {
+      "none",        "doubleSlap", "cometPunch", "furyAttack", "pinMissile",
+      "spikeCannon", "barrage",    "boneClub",   "twineedle",  "doubleKick"};
+
+  std::vector<std::string> recoilFlags = {"none", "takeDown", "doubleEdge",
+                                          "submission"};
+
+  std::vector<std::string> lockedFlags = {"none", "rage", "thrash",
+                                          "petalDance"};
+
+  std::vector<std::string> lingerFlags = {"none", "fireSpin", "wrap", "clamp",
+                                          "bind"};
+
+  std::vector<std::string> alwaysHitFlags = {"none", "swift"};
+
+  std::vector<std::string> drainingFlags = {"none", "absorb", "megaDrain",
+                                            "leechLife"};
+
+  std::vector<std::string> ohkoFlags = {"none", "fissure", "guillotine",
+                                        "hornDrill"};
+
+  std::vector<std::string> semiInvulnerableFlags = {"none", "fly", "dig"};
+
+  std::vector<std::string> forceSwapFlags = {"none", "roar", "whirlwind"};
+
+  std::vector<std::string> rechargeFlags = {"none", "hyperBeam"};
   bool haze = false;  // Should be in stat change section
 
  public:
