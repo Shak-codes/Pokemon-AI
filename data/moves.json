@@ -197,7 +197,9 @@
     "pp": 5,
     "effects": {
       "status": {
-        "freeze": 0.1
+        "opponent": {
+          "freeze": 0.1
+        }
       }
     }
   },
@@ -211,7 +213,9 @@
     "pp": 15,
     "effects": {
       "status": {
-        "paralyze": 0.3
+        "opponent": {
+          "paralyze": 0.3
+        }
       }
     }
   },
@@ -311,7 +315,9 @@
     "pp": 10,
     "effects": {
       "status": {
-        "confusion": 1
+        "opponent" : {
+          "confusion": 1
+        }
       }
     }
   },
@@ -325,7 +331,9 @@
     "pp": 25,
     "effects": {
       "status": {
-        "confusion": 0.1
+        "opponent" : {
+          "confusion": 0.1
+        }
       }
     }
   },
@@ -576,7 +584,9 @@
     "pp": 25,
     "effects": {
       "status": {
-        "burn": 0.1
+        "opponent" : {
+          "burn": 0.1
+        }
       }
     }
   },
@@ -602,7 +612,9 @@
     "pp": 5,
     "effects": {
       "status": {
-        "burn": 0.1
+        "opponent" : {
+          "burn": 0.1
+        }
       }
     }
   },
@@ -616,7 +628,9 @@
     "pp": 15,
     "effects": {
       "status": {
-        "burn": 0.1
+        "opponent" : {
+          "burn": 0.1
+        }
       }
     }
   },
@@ -654,7 +668,9 @@
     "pp": 15,
     "effects": {
       "status": {
-        "burn": 0.1
+        "opponent" : {
+          "burn": 0.1
+        }
       }
     }
   },
@@ -735,7 +751,9 @@
     "pp": 30,
     "effects": {
       "status": {
-        "paralyze": true
+        "opponent" : {
+          "paralyze": 1
+        }
       }
     }
   },
@@ -930,7 +948,9 @@
     "pp": 20,
     "effects": {
       "status": {
-        "sleep": 1
+        "opponent" : {
+          "sleep": 1
+        }
       }
     }
   },
@@ -944,7 +964,9 @@
     "pp": 10,
     "effects": {
       "status": {
-        "freeze": 0.1
+        "opponent" : {
+          "freeze": 0.1
+        }
       }
     }
   },
@@ -958,7 +980,9 @@
     "pp": 15,
     "effects": {
       "status": {
-        "freeze": 0.1
+        "opponent" : {
+          "freeze": 0.1
+        }
       }
     }
   },
@@ -1068,7 +1092,9 @@
     "pp": 30,
     "effects": {
       "status": {
-        "paralyze": 0.3
+        "opponent" : {
+          "paralyze": 0.3
+        }
       }
     }
   },
@@ -1095,7 +1121,9 @@
     "effects": {
       "special": "lovelyKiss",
       "status": {
-        "sleep": 1
+        "opponent" : {
+          "sleep": 1
+        }
       }
     }
   },
@@ -1297,8 +1325,8 @@
     "pp": 40,
     "effects": {
       "status": {
-        "poison": {
-          "chance": 1
+        "opponent" : {
+          "poison": 1
         }
       }
     }
@@ -1313,8 +1341,8 @@
     "pp": 35,
     "effects": {
       "status": {
-        "poison": {
-          "chance": 1
+        "opponent" : {
+          "poison": 1
         }
       }
     }
@@ -1329,8 +1357,8 @@
     "pp": 35,
     "effects": {
       "status": {
-        "poison": {
-          "chance": 0.3
+        "opponent" : {
+          "poison": 0.3
         }
       }
     }
@@ -1355,7 +1383,9 @@
     "pp": 20,
     "effects": {
       "status": {
-        "confusion": 0.1
+        "opponent" : {
+          "confusion": 0.1
+        }
       }
     }
   },
@@ -1475,7 +1505,9 @@
     "pp": 10,
     "effects": {
       "status": {
-        "sleep": true
+        "user" : {
+          "sleep": 1
+        }
       },
       "healing": {
         "chance": 1,
@@ -1633,7 +1665,7 @@
     "effects": {
       "status": {
         "opponent": {
-          "sleep": true
+          "sleep": 1
         }
       }
     }
@@ -1704,7 +1736,9 @@
     "pp": 15,
     "effects": {
       "status": {
-        "sleep": 1
+        "opponent": {
+          "sleep": 1
+        }
       }
     }
   },
@@ -1718,7 +1752,9 @@
     "pp": 20,
     "effects": {
       "status": {
-        "poison": 0.3
+        "opponent": {
+          "poison": 0.3
+        }
       }
     }
   },
@@ -1732,7 +1768,9 @@
     "pp": 20,
     "effects": {
       "status": {
-        "poison": 0.4
+        "opponent": {
+          "poison": 0.4
+        }
       }
     }
   },
@@ -1832,8 +1870,8 @@
     "pp": 15,
     "effects": {
       "status": {
-        "sleep": {
-          "chance": 1
+        "opponent": {
+          "sleep": 1
         }
       }
     }
@@ -1903,7 +1941,7 @@
     "pp": 30,
     "effects": {
       "status": {
-        "target": {
+        "opponent": {
           "paralyze": 1
         }
       }
@@ -1958,7 +1996,7 @@
     "effects": {
       "status": {
         "opponent": {
-          "confusion": true
+          "confusion": 1
         }
       }
     }
@@ -2067,7 +2105,9 @@
     "pp": 20,
     "effects": {
       "status": {
-        "confusion": true
+        "user": {
+          "confusion": 1
+        }
       },
       "multiTurn": {
         "3": 0.5,

@@ -80,7 +80,6 @@ class Special {
   std::vector<std::string> forceSwapFlags = {"none", "roar", "whirlwind"};
 
   std::vector<std::string> rechargeFlags = {"none", "hyperBeam"};
-  bool haze = false;  // Should be in stat change section
 
  public:
   Special() = default;
