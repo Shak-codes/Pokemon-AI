@@ -12,6 +12,7 @@ class StatModifiers {
   std::map<std::string, float> chances;
 
  public:
+  StatModifiers() = default;
   StatModifiers(const json& mods);
 
   int getMod(const std::string& key) const;

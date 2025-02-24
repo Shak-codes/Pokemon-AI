@@ -14,7 +14,7 @@ using json = nlohmann::json;
 class Effects {
   Status userStatus;
   Status oppStatus;
-  Special specialEffects;
+  // Special specialEffects;
   StatModifiers OppStatMods;
   StatModifiers UserStatMods;
 

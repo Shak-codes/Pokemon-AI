@@ -22,8 +22,8 @@
     "accuracy": 1,
     "pp": 30,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "defense": {
             "chance": 0.1,
             "value": -1
@@ -41,7 +41,7 @@
     "accuracy": false,
     "pp": 40,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "defense": {
             "chance": 1,
@@ -60,7 +60,7 @@
     "accuracy": false,
     "pp": 30,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "speed": {
             "chance": 1,
@@ -79,7 +79,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "special": {
             "chance": 1,
@@ -98,8 +98,8 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "attack": {
             "chance": 0.1,
             "value": -1
@@ -136,7 +136,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "defense": {
             "chance": 1,
@@ -252,8 +252,8 @@
     "accuracy": 1,
     "pp": 30,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "speed": {
             "chance": 0.1,
             "value": -1
@@ -271,8 +271,8 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "speed": {
             "chance": 0.1,
             "value": -1
@@ -346,8 +346,8 @@
     "accuracy": 1,
     "pp": 35,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "speed": {
             "chance": 0.1,
             "value": -1
@@ -412,7 +412,7 @@
     "accuracy": false,
     "pp": 40,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "defense": {
             "chance": 1,
@@ -496,7 +496,7 @@
     "accuracy": false,
     "pp": 15,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "evasiveness": 1
         }
@@ -683,8 +683,8 @@
     "accuracy": 0.7,
     "pp": 20,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "accuracy": {
             "chance": 0.1,
             "value": -1
@@ -766,8 +766,8 @@
     "accuracy": 1,
     "pp": 40,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "attack": {
             "chance": 1,
             "value": -1
@@ -785,7 +785,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "special": {
             "chance": 1,
@@ -826,7 +826,7 @@
     "accuracy": false,
     "pp": 30,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "defense": {
             "chance": 1,
@@ -845,7 +845,7 @@
     "accuracy": false,
     "pp": 30,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "reset": true
         }
@@ -1025,8 +1025,8 @@
     "accuracy": 0.8,
     "pp": 15,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "accuracy": {
             "chance": 1,
             "value": -1
@@ -1072,8 +1072,8 @@
     "accuracy": 1,
     "pp": 30,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "defense": {
             "chance": 1,
             "value": -1
@@ -1148,7 +1148,7 @@
     "accuracy": false,
     "pp": 40,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "attack": {
             "chance": 1,
@@ -1225,7 +1225,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "evasion": {
             "chance": 1,
@@ -1398,8 +1398,8 @@
     "accuracy": 0.8,
     "pp": 10,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "special": {
             "chance": 0.3,
             "value": -1
@@ -1570,8 +1570,8 @@
     "accuracy": 1,
     "pp": 15,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "accuracy": {
             "chance": 1,
             "value": -1
@@ -1599,8 +1599,8 @@
     "accuracy": 0.85,
     "pp": 40,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "defense": {
             "chance": 1,
             "value": -2
@@ -1644,7 +1644,7 @@
     "accuracy": false,
     "pp": 30,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "attack": {
             "chance": 1,
@@ -1680,7 +1680,7 @@
     "pp": 15,
     "effects": {
       "charge": true,
-      "statChanges": {
+      "statMods": {
         "user": {
           "defense": {
             "chance": 1,
@@ -1783,8 +1783,8 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "accuracy": {
             "chance": 1,
             "value": -1
@@ -1907,8 +1907,8 @@
     "accuracy": 0.95,
     "pp": 40,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "speed": {
             "chance": 1,
             "value": -1
@@ -2032,7 +2032,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "statChanges": {
+      "statMods": {
         "user": {
           "attack": {
             "chance": 1,
@@ -2061,8 +2061,8 @@
     "accuracy": 1,
     "pp": 30,
     "effects": {
-      "statChanges": {
-        "target": {
+      "statMods": {
+        "opponent": {
           "defense": {
             "chance": 1,
             "value": -1

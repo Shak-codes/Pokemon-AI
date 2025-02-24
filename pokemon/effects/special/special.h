@@ -83,7 +83,7 @@ class Special {
 
  public:
   Special() = default;
-  Special(const json& effects);
+  Special(std::string name);
   std::string getSpecialEffect() const;
 };
 

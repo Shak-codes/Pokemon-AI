@@ -3,14 +3,23 @@
 #include <string>
 
 #include "../../lib/json.hpp"
+#include "statModifiers/statModifiers.h"
 #include "status/status.h"
 
 using json = nlohmann::json;
 
 Effects::Effects(const json& effects) {
-  const json& status = effects["status"];
+  const json& statusEffects = effects["status"];
+  const json& statMods = effects["statMods"];
   this->userStatus =
-      status.contains("user") ? Status(status["user"]) : Status();
-  this->oppStatus =
-      status.contains("target") ? Status(status["opponent"]) : Status();
+      statusEffects.contains("user") ? Status(statusEffects["user"]) : Status();
+  this->oppStatus = statusEffects.contains("target")
+                        ? Status(statusEffects["opponent"])
+                        : Status();
+  this->UserStatMods = statMods.contains("user")
+                           ? StatModifiers(statMods["user"])
+                           : StatModifiers();
+  this->OppStatMods = statMods.contains("opponent")
+                          ? StatModifiers(statMods["opponent"])
+                          : StatModifiers();
 };
