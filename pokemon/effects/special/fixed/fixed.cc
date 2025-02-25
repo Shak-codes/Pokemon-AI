@@ -4,9 +4,9 @@
 
 using json = nlohmann::json;
 
-Fixed::Fixed(const json& damage) {
-  if (damage.contains("fixed")) {
-    const auto& fixedData = damage["fixed"];
+Fixed::Fixed(const json& effects) {
+  if (effects.contains("fixed")) {
+    const auto& fixedData = effects["fixed"];
     std::string type = fixedData.value("type", "");
 
     if (type == "opponentHealth") {
@@ -19,9 +19,12 @@ Fixed::Fixed(const json& damage) {
       variant = CONSTANT;
       value = fixedData.value("value", 0.0f);
     }
+    fixed = true;
   }
 }
 
 Fixed::DamageVariant Fixed::getVariant() { return variant; }
 
 float Fixed::getValue() const { return value; }
+
+bool Fixed::isFixed() const { return fixed; }

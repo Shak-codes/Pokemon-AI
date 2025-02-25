@@ -7,11 +7,10 @@ using json = nlohmann::json;
 
 class Multistrike {
  private:
-  std::map<int, float> prob;
+  std::map<int, float> prob{};
 
  public:
-  Multistrike() = default;
-  Multistrike(const json& data);
+  Multistrike(const json& effects);
   const std::map<int, float>& getProb() const;
   bool isMultistrike() const;
 };

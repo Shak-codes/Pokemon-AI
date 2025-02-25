@@ -10,9 +10,9 @@ class Recoil {
   enum RecoilType { STANDARD, MISS_ONLY };
   enum DamageType { CONSTANT, PERCENTAGE };
 
-  float damage = 0.0f;
-  DamageType damageType = CONSTANT;
-  RecoilType recoilType = STANDARD;
+  float damage{0.0f};
+  DamageType damageType{CONSTANT};
+  RecoilType recoilType{STANDARD};
 
  public:
   Recoil() = default;

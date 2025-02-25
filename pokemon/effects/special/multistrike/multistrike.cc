@@ -3,9 +3,9 @@
 
 using json = nlohmann::json;
 
-Multistrike::Multistrike(const json& data) {
-  if (data.contains("hits")) {
-    for (auto& [key, value] : data["hits"].items()) {
+Multistrike::Multistrike(const json& effects) {
+  if (effects.contains("multistrike")) {
+    for (auto& [key, value] : effects["multistrike"].items()) {
       int hits = std::stoi(key);
       float probability = value;
       prob[hits] = probability;

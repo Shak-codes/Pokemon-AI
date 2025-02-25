@@ -117,13 +117,11 @@
     "accuracy": 0.85,
     "pp": 20,
     "effects": {
-      "multiHit": {
-        "hits": {
-          "2": 0.375,
-          "3": 0.375,
-          "4": 0.125,
-          "5": 0.125
-        }
+      "multistrike": {
+        "2": 0.375,
+        "3": 0.375,
+        "4": 0.125,
+        "5": 0.125
       }
     }
   },
@@ -167,7 +165,7 @@
     "accuracy": 0.75,
     "pp": 20,
     "effects": {
-      "multiHit": {
+      "multistrike": {
         "2": 0.375,
         "3": 0.375,
         "4": 0.125,
@@ -513,7 +511,8 @@
     "pp": 15,
     "effects": {
       "recoil": {
-        "percentage": 0.25
+        "type": "percentage",
+        "value": 0.25
       }
     }
   },
@@ -526,7 +525,10 @@
     "accuracy": 1,
     "pp": 10,
     "effects": {
-      "fixed": 40
+      "fixed": {
+        "type": "constant",
+        "damage": 40
+      }
     }
   },
   "Dream Eater": {
@@ -1268,7 +1270,9 @@
     "accuracy": 1,
     "pp": 15,
     "effects": {
-      "fixed": "level"
+      "fixed": {
+        "type": "level"
+      }
     }
   },
   "Pay Day": {
@@ -1618,7 +1622,9 @@
     "accuracy": 1,
     "pp": 20,
     "effects": {
-      "fixed": "level"
+      "fixed": {
+        "type": "level"
+      }
     }
   },
   "Self-Destruct": {
@@ -1631,7 +1637,8 @@
     "pp": 5,
     "effects": {
       "recoil": {
-        "percentage": 1
+        "type": "percentage",
+        "value": 1
       }
     }
   },
@@ -1828,7 +1835,10 @@
     "accuracy": 0.9,
     "pp": 20,
     "effects": {
-      "fixed": 20
+      "fixed": {
+        "type": "constant",
+        "damage": 20
+      }
     }
   },
   "Spike Cannon": {
@@ -1840,13 +1850,11 @@
     "accuracy": 1,
     "pp": 15,
     "effects": {
-      "multiHit": {
-        "hits": {
-          "2": 0.375,
-          "3": 0.375,
-          "4": 0.125,
-          "5": 0.125
-        }
+      "multistrike": {
+        "2": 0.375,
+        "3": 0.375,
+        "4": 0.125,
+        "5": 0.125
       }
     }
   },
@@ -1927,7 +1935,8 @@
     "pp": false,
     "effects": {
       "recoil": {
-        "damageDealt": 0.5
+        "type": "damageDealt",
+        "value": 0.5
       }
     }
   },
@@ -1957,7 +1966,8 @@
     "pp": 25,
     "effects": {
       "recoil": {
-        "damageDealt": 0.25
+        "type": "damageDealt",
+        "value": 0.25
       }
     }
   },
@@ -1982,7 +1992,10 @@
     "accuracy": 0.9,
     "pp": 10,
     "effects": {
-      "fixed": 0.5
+      "fixed": {
+        "type": "percent",
+        "percentage": 0.5
+      }
     }
   },
   "Supersonic": {
@@ -2081,7 +2094,8 @@
     "pp": 20,
     "effects": {
       "recoil": {
-        "damageDealt": 0.25
+        "type": "damageDealt",
+        "value": 0.25
       }
     }
   },

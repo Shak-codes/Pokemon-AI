@@ -4,10 +4,10 @@
 
 using json = nlohmann::json;
 
-Recoil::Recoil(const json& data) {
-  std::string damageTypeStr = data["value"].value("type", "constant");
-  damage = data["value"].value("value", 0.0f);
-  std::string typeStr = data.value("type", "standard");
+Recoil::Recoil(const json& effects) {
+  std::string damageTypeStr = effects["value"].value("type", "constant");
+  damage = effects["value"].value("value", 0.0f);
+  std::string typeStr = effects.value("type", "standard");
   if (damageTypeStr == "percentage") damageType = PERCENTAGE;
   if (typeStr == "onMiss") recoilType = MISS_ONLY;
 }
