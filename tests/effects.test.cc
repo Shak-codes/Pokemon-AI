@@ -42,13 +42,13 @@ int main() {
 
     for (const auto& [description, condition] : effectChecks) {
       if (condition) {
-        std::cout << "\n├──" << description;
+        std::cout << "\n|----" << description;
         basicMove = false;
       }
     }
 
     if (moveEffects.isSpecial()) {
-      std::cout << "\n├──is a special move";
+      std::cout << "\n|---- is a special move";
       basicMove = false;
     }
 

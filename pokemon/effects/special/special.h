@@ -49,38 +49,39 @@ class Special {
   Multistrike multistrike;
   Fixed fixed;
   Recoil recoil;
-  std::vector<std::string> chargeFlags{"none", "bide", "other"};
+  std::vector<std::string> chargeFlags{"none", "Bide", "other"};
 
-  std::vector<std::string> copyFlags{"none", "mirrorMove", "mimic"};
-  std::vector<std::string> customFlags{"psywave",   "rage",       "transform",
-                                       "disable",   "conversion", "counter",
-                                       "metronome", "dreamEater"};
+  std::vector<std::string> copyFlags{"none", "Mirror Move", "Mimic"};
+  std::vector<std::string> customFlags{"Psywave",   "Rage",       "Transform",
+                                       "Disable",   "Conversion", "Counter",
+                                       "Metronome", "Dream Eater"};
 
   std::vector<std::string> multistrikeFlags{
-      "none",        "doubleSlap", "cometPunch", "furyAttack", "pinMissile",
-      "spikeCannon", "barrage",    "boneClub",   "twineedle",  "doubleKick"};
+      "none",        "Double Slap",  "Comet Punch", "Fury Attack",
+      "Pin Missile", "Spike Cannon", "Barrage",     "Bone Club",
+      "Twineedle",   "Double Kick"};
 
-  std::vector<std::string> recoilFlags{"none", "takeDown", "doubleEdge",
-                                       "submission"};
+  std::vector<std::string> recoilFlags{"none", "Take Down", "Double Edge",
+                                       "Submission"};
 
-  std::vector<std::string> lockedFlags{"none", "rage", "thrash", "petalDance"};
+  std::vector<std::string> lockedFlags{"none", "Rage", "Thrash", "Petal Dance"};
 
-  std::vector<std::string> lingerFlags{"none", "fireSpin", "wrap", "clamp",
-                                       "bind"};
+  std::vector<std::string> lingerFlags{"none", "Fire Spin", "Wrap", "Clamp",
+                                       "Bind"};
 
-  std::vector<std::string> alwaysHitFlags{"none", "swift"};
+  std::vector<std::string> alwaysHitFlags{"none", "Swift"};
 
-  std::vector<std::string> drainingFlags{"none", "absorb", "megaDrain",
-                                         "leechLife"};
+  std::vector<std::string> drainingFlags{"none", "Absorb", "Mega Drain",
+                                         "Leech Life"};
 
-  std::vector<std::string> ohkoFlags{"none", "fissure", "guillotine",
-                                     "hornDrill"};
+  std::vector<std::string> ohkoFlags{"none", "Fissure", "Guillotine",
+                                     "Horn Drill"};
 
-  std::vector<std::string> semiInvulnerableFlags{"none", "fly", "dig"};
+  std::vector<std::string> semiInvulnerableFlags{"none", "Fly", "Dig"};
 
-  std::vector<std::string> forceSwapFlags{"none", "roar", "whirlwind"};
+  std::vector<std::string> forceSwapFlags{"none", "Roar", "Whirlwind"};
 
-  std::vector<std::string> rechargeFlags{"none", "hyperBeam"};
+  std::vector<std::string> rechargeFlags{"none", "Hyper Beam"};
 
   std::vector<std::vector<std::string>> allFlags{
       chargeFlags,   copyFlags,   customFlags,           multistrikeFlags,
