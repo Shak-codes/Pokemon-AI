@@ -14,12 +14,18 @@ using json = nlohmann::json;
 class Effects {
   Status userStatus;
   Status oppStatus;
-  // Special specialEffects;
-  StatModifiers OppStatMods;
-  StatModifiers UserStatMods;
+  Special special;
+  StatModifiers oppStats;
+  StatModifiers userStats;
 
  public:
-  Effects(const json& effects);
+  Effects(std::string move, const json& effects);
+  bool affectsUserStatus() const;
+  bool affectsOpponentStatus() const;
+  bool affectsUserStats() const;
+  bool affectsOpponentStats() const;
+  bool isSpecial() const;
+  std::string getSpecial() const;
 };
 
 #endif

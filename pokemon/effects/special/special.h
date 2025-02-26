@@ -1,6 +1,8 @@
 #ifndef SPECIAL
 #define SPECIAL
 
+#include <string>
+
 #include "../../../lib/json.hpp"
 #include "fixed/fixed.h"
 #include "multistrike/multristrike.h"
@@ -9,9 +11,9 @@ using json = nlohmann::json;
 
 class Special {
  private:
-  enum ChargeMoves { NONE, BIDE, OTHER };
-  enum CopyMoves { NONE, MIRROR_MOVE, MIMIC };
-  enum CustomEffectMoves {
+  enum class ChargeMoves { NONE, BIDE, OTHER };
+  enum class CopyMoves { NONE, MIRROR_MOVE, MIMIC };
+  enum class CustomEffectMoves {
     NONE,
     PSYWAVE,
     RAGE,
@@ -22,7 +24,7 @@ class Special {
     METRONOME,
     DREAM_EATER
   };
-  enum MultistrikeMoves {
+  enum class MultistrikeMoves {
     NONE,
     DOUBLE_SLAP,
     COMET_PUNCH,
@@ -34,15 +36,15 @@ class Special {
     TWINEEDLE,
     DOUBLE_KICK
   };
-  enum RecoilMoves { NONE, TAKE_DOWN, DOUBLE_EDGE, SUBMISSION };
-  enum LockedMoves { NONE, RAGE, THRASH, PETAL_DANCE };
-  enum LingerMoves { NONE, FIRE_SPIN, WRAP, CLAMP, BIND };
-  enum AlwaysHitMoves { NONE, SWIFT };
-  enum DrainingMoves { NONE, ABSORB, MEGA_DRAIN, LEECH_LIFE };
-  enum OHKOMoves { NONE, FISSURE, GUILLOTINE, HORN_DRILL };
-  enum SemiInvulnerableMoves { NONE, FLY, DIG };
-  enum ForceSwapMoves { NONE, ROAR, WHIRLWIND };
-  enum RechargeMove { NONE, HYPER_BEAM };
+  enum class RecoilMoves { NONE, TAKE_DOWN, DOUBLE_EDGE, SUBMISSION };
+  enum class LockedMoves { NONE, RAGE, THRASH, PETAL_DANCE };
+  enum class LingerMoves { NONE, FIRE_SPIN, WRAP, CLAMP, BIND };
+  enum class AlwaysHitMoves { NONE, SWIFT };
+  enum class DrainingMoves { NONE, ABSORB, MEGA_DRAIN, LEECH_LIFE };
+  enum class OHKOMoves { NONE, FISSURE, GUILLOTINE, HORN_DRILL };
+  enum class SemiInvulnerableMoves { NONE, FLY, DIG };
+  enum class ForceSwapMoves { NONE, ROAR, WHIRLWIND };
+  enum class RechargeMove { NONE, HYPER_BEAM };
 
   Multistrike multistrike;
   Fixed fixed;
@@ -91,7 +93,7 @@ class Special {
   std::string specialEffect{"N/A"};
 
  public:
-  Special(const json& moveData);
+  Special(std::string move, const json& effects);
   std::string getSpecialEffect() const;
   bool hasSpecialEffect() const;
 };

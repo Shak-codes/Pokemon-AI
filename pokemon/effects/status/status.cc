@@ -1,7 +1,6 @@
 #include "status.h"
 
 #include "../../../lib/json.hpp"
-
 using json = nlohmann::json;
 
 Status::Status(const json& status) {

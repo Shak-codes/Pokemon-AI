@@ -1,15 +1,25 @@
 #include "recoil.h"
 
 #include "../../../../lib/json.hpp"
-
 using json = nlohmann::json;
 
 Recoil::Recoil(const json& effects) {
-  std::string damageTypeStr = effects["value"].value("type", "constant");
-  damage = effects["value"].value("value", 0.0f);
-  std::string typeStr = effects.value("type", "standard");
-  if (damageTypeStr == "percentage") damageType = PERCENTAGE;
-  if (typeStr == "onMiss") recoilType = MISS_ONLY;
+  if (!effects.contains("recoil")) {
+    return;
+  }
+
+  const json& recoilData = effects["recoil"];
+
+  std::string recoilTypeStr = recoilData.value("type", "constant");
+  std::string whenStr = recoilData.value("when", "always");
+  damage = recoilData.value("value", 0.0f);
+  std::string typeStr = recoilData.value("type", "standard");
+
+  if (recoilTypeStr == "percentage")
+    recoilType = PERCENTAGE;
+  else if (recoilTypeStr == "damageDealt")
+    recoilType = DAMAGE_DEALT;
+  if (whenStr == "onMiss") recoilWhen = ON_MISS;
 }
 
 float Recoil::getDamage() const { return damage; }

@@ -1,7 +1,6 @@
 #include "statModifiers.h"
 
 #include "../../../lib/json.hpp"
-
 using json = nlohmann::json;
 
 StatModifiers::StatModifiers(const json& mods) {

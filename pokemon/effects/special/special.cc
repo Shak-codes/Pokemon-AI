@@ -7,11 +7,9 @@
 
 using json = nlohmann::json;
 
-Special::Special(const json& moveData)
-    : fixed(moveData["effects"]),
-      multistrike(moveData["effects"]),
-      recoil(moveData["effects"]) {
-  std::string name = moveData["name"];
+Special::Special(std::string move, const json& effects)
+    : fixed(effects), multistrike(effects), recoil(effects) {
+  std::string name = move;
 
   for (const auto& flags : allFlags) {
     if (std::find(flags.begin(), flags.end(), name) != flags.end()) {

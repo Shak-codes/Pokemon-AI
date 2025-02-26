@@ -1,8 +1,10 @@
-#ifndef STATUS
-#define STATUS
+#ifndef __STATUS__
+#define __STATUS__
+
+#include <map>
+#include <string>
 
 #include "../../../lib/json.hpp"
-
 using json = nlohmann::json;
 
 class Status {

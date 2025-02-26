@@ -1,7 +1,7 @@
 #ifndef _POKEMON_ENUMS_
 #define _POKEMON_ENUMS_
 
-enum class Status { NONE, PARALYSIS, POISON, BURN, SLEEP, FREEZE };
+enum class StatusEffect { NONE, PARALYSIS, POISON, BURN, SLEEP, FREEZE };
 enum class Effect { NONE, STATUS, BUFF, DEBUFF, HEAL };
 enum class Type {
   Normal,

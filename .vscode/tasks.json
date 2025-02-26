@@ -112,9 +112,35 @@
             "presentation": {
                 "reveal": "always"
             }
-        }
-
-
+        },
+        {
+            "label": "test effects",
+            "type": "cppbuild",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\tests\\effects.test.cc",
+                "${workspaceFolder}\\pokemon\\effects\\effects.cc",
+                "${workspaceFolder}\\pokemon\\effects\\special\\special.cc",
+                "${workspaceFolder}\\pokemon\\effects\\statModifiers\\statModifiers.cc",
+                "${workspaceFolder}\\pokemon\\effects\\status\\status.cc",
+                "${workspaceFolder}\\pokemon\\effects\\special\\fixed\\fixed.cc",
+                "${workspaceFolder}\\pokemon\\effects\\special\\multistrike\\multistrike.cc",
+                "${workspaceFolder}\\pokemon\\effects\\special\\recoil\\recoil.cc",
+                "-o",
+                "${workspaceFolder}\\tests\\effects.test.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
     ]
 }
 

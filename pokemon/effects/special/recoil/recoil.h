@@ -7,12 +7,12 @@ using json = nlohmann::json;
 
 class Recoil {
  private:
-  enum RecoilType { STANDARD, MISS_ONLY };
-  enum DamageType { CONSTANT, PERCENTAGE };
+  enum RecoilWhen { ALWAYS, ON_MISS };
+  enum RecoilType { CONSTANT, PERCENTAGE, DAMAGE_DEALT };
 
   float damage{0.0f};
-  DamageType damageType{CONSTANT};
-  RecoilType recoilType{STANDARD};
+  RecoilWhen recoilWhen{ALWAYS};
+  RecoilType recoilType{CONSTANT};
 
  public:
   Recoil() = default;

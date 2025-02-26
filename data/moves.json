@@ -511,6 +511,7 @@
     "pp": 15,
     "effects": {
       "recoil": {
+        "when": "always",
         "type": "percentage",
         "value": 0.25
       }
@@ -876,11 +877,9 @@
     "pp": 10,
     "effects": {
       "recoil": {
-        "type": "onMiss",
-        "value": {
-          "type": "constant",
-          "value": 1
-        }
+        "when": "onMiss",
+        "type": "constant",
+        "value": 1
       }
     }
   },
@@ -998,11 +997,9 @@
     "pp": 25,
     "effects": {
       "recoil": {
-        "type": "onMiss",
-        "value": {
-          "type": "constant",
-          "value": 1
-        }
+        "when": "onMiss",
+        "type": "constant",
+        "value": 1
       }
     }
   },
@@ -1637,6 +1634,7 @@
     "pp": 5,
     "effects": {
       "recoil": {
+        "when": "always",
         "type": "percentage",
         "value": 1
       }
@@ -1935,6 +1933,7 @@
     "pp": false,
     "effects": {
       "recoil": {
+        "when": "always",
         "type": "damageDealt",
         "value": 0.5
       }
@@ -1966,6 +1965,7 @@
     "pp": 25,
     "effects": {
       "recoil": {
+        "when": "always",
         "type": "damageDealt",
         "value": 0.25
       }
@@ -2094,6 +2094,7 @@
     "pp": 20,
     "effects": {
       "recoil": {
+        "when": "always",
         "type": "damageDealt",
         "value": 0.25
       }
