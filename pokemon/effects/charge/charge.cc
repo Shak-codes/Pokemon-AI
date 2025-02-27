@@ -5,12 +5,12 @@
 using json = nlohmann::json;
 
 Charge::Charge(const json& effects) {
-  if (effects.contains("charge")) {
-    for (auto& [key, value] : effects["charge"].items()) {
-      int hits = std::stoi(key);
-      float probability = value;
-      prob[hits] = probability;
-    }
+  if (!effects.contains("charge")) return;
+
+  for (auto& [key, value] : effects["charge"].items()) {
+    int hits = std::stoi(key);
+    float probability = value;
+    prob[hits] = probability;
   }
 }
 

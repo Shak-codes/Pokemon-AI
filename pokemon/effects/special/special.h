@@ -13,7 +13,7 @@ class Special {
  public:
   Special(const json& effects);
   std::string getSpecialEffect() const;
-  bool hasSpecialEffect() const;
+  bool hasEffect() const;
 };
 
 #endif

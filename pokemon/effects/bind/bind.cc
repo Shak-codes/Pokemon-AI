@@ -5,12 +5,12 @@
 using json = nlohmann::json;
 
 Bind::Bind(const json& effects) {
-  if (effects.contains("bind")) {
-    for (auto& [key, value] : effects["bind"].items()) {
-      int hits = std::stoi(key);
-      float probability = value;
-      prob[hits] = probability;
-    }
+  if (!effects.contains("bind")) return;
+
+  for (auto& [key, value] : effects["bind"].items()) {
+    int hits = std::stoi(key);
+    float probability = value;
+    prob[hits] = probability;
   }
 }
 

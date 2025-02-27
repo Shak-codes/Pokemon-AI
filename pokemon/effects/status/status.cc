@@ -3,25 +3,14 @@
 #include "../../../lib/json.hpp"
 using json = nlohmann::json;
 
-Status::Status(const json& status) {
-  for (const auto& [key, value] : status.items()) {
-    statusEffects[key] = value.get<float>();
+Status::Status(const json& statusEffects) {
+  for (const auto& [key, value] : statusEffects.items()) {
+    this->statusEffects[key] = value.get<float>();
   }
 }
 
-bool Status::hasStatusEffects() const {
-  for (const auto& [key, value] : statusEffects) {
-    if (value > 0.0f) {
-      return true;
-    }
-  }
-  return false;
-}
+bool Status::hasEffect() const { return !statusEffects.empty(); }
 
-float Status::getStatusEffect(const std::string& key) const {
-  auto it = statusEffects.find(key);
-  if (it != statusEffects.end()) {
-    return it->second;
-  }
-  return 0.0f;
+std::map<std::string, float> Status::getStatusEffect() const {
+  return statusEffects;
 }

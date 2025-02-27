@@ -12,7 +12,7 @@ class Multistrike {
  public:
   Multistrike(const json& effects);
   const std::map<int, float>& getProb() const;
-  bool isMultistrike() const;
+  bool hasEffect() const;
 };
 
 #endif

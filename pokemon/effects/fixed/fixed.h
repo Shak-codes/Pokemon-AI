@@ -7,16 +7,15 @@ using json = nlohmann::json;
 
 class Fixed {
  private:
-  enum DamageVariant { NONE, OPP_HP, USER_LEVEL, CONSTANT };
-  DamageVariant variant{NONE};
+  enum class DamageVariant { NONE, OPP_HP, USER_LEVEL, CONSTANT };
+  DamageVariant variant{DamageVariant::NONE};
   float value{0.0f};
-  bool fixed{false};
 
  public:
   Fixed(const json& effects);
   DamageVariant getVariant();
   float getValue() const;
-  bool isFixed() const;
+  bool hasEffect() const;
 };
 
 #endif

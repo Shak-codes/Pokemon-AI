@@ -8,16 +8,13 @@ using json = nlohmann::json;
 
 class StatModifiers {
  private:
-  std::map<std::string, int> modifiers;
-  std::map<std::string, float> chances;
+  std::map<std::string, std::pair<int, float>> mods{};
 
  public:
-  StatModifiers() = default;
   StatModifiers(const json& mods);
 
-  int getMod(const std::string& key) const;
-  float getChance(const std::string& key) const;
-  bool hasMods() const;
+  std::pair<int, float> getMod(const std::string& key) const;
+  bool hasEffect() const;
 };
 
 #endif

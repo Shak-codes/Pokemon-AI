@@ -12,6 +12,6 @@ Special::Special(const json& effects) {
   name = effects["special"];
 }
 
-bool Special::hasSpecialEffect() const { return name != "N/A"; }
+bool Special::hasEffect() const { return name != "N/A"; }
 
 std::string Special::getSpecialEffect() const { return name; }

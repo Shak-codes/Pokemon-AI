@@ -12,6 +12,6 @@ Healing::Healing(const json& effects) {
   value = effects["healing"]["value"];
 }
 
-bool Healing::hasEffect() const { return value > 0.0f; }
+bool Healing::hasEffect() const { return type != HealingTypes::NONE; }
 
 float Healing::getValue() const { return value; }

@@ -19,11 +19,17 @@ Recoil::Recoil(const json& effects) {
     recoilType = RecoilType::PERCENTAGE;
   else if (recoilTypeStr == "damageDealt")
     recoilType = RecoilType::DAMAGE_DEALT;
-  if (whenStr == "onMiss") recoilWhen = RecoilWhen::ON_MISS;
+  else
+    recoilType = RecoilType::CONSTANT;
+
+  if (whenStr == "onMiss")
+    recoilWhen = RecoilWhen::ON_MISS;
+  else
+    recoilWhen = RecoilWhen::ALWAYS;
 }
 
 float Recoil::getDamage() const { return damage; }
 
 Recoil::RecoilType Recoil::getRecoilType() const { return recoilType; }
 
-bool Recoil::hasRecoil() const { return damage > 0.0f; }
+bool Recoil::hasEffect() const { return recoilType != RecoilType::NONE; }
