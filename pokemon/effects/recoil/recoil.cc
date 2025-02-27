@@ -1,6 +1,6 @@
 #include "recoil.h"
 
-#include "../../../../lib/json.hpp"
+#include "../../../lib/json.hpp"
 using json = nlohmann::json;
 
 Recoil::Recoil(const json& effects) {
@@ -16,10 +16,10 @@ Recoil::Recoil(const json& effects) {
   std::string typeStr = recoilData.value("type", "standard");
 
   if (recoilTypeStr == "percentage")
-    recoilType = PERCENTAGE;
+    recoilType = RecoilType::PERCENTAGE;
   else if (recoilTypeStr == "damageDealt")
-    recoilType = DAMAGE_DEALT;
-  if (whenStr == "onMiss") recoilWhen = ON_MISS;
+    recoilType = RecoilType::DAMAGE_DEALT;
+  if (whenStr == "onMiss") recoilWhen = RecoilWhen::ON_MISS;
 }
 
 float Recoil::getDamage() const { return damage; }

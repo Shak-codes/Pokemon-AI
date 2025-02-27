@@ -1,18 +1,18 @@
 #ifndef RECOIL_H
 #define RECOIL_H
 
-#include "../../../../lib/json.hpp"
+#include "../../../lib/json.hpp"
 
 using json = nlohmann::json;
 
 class Recoil {
  private:
-  enum RecoilWhen { ALWAYS, ON_MISS };
-  enum RecoilType { CONSTANT, PERCENTAGE, DAMAGE_DEALT };
+  enum class RecoilWhen { ALWAYS, ON_MISS };
+  enum class RecoilType { CONSTANT, PERCENTAGE, DAMAGE_DEALT };
 
   float damage{0.0f};
-  RecoilWhen recoilWhen{ALWAYS};
-  RecoilType recoilType{CONSTANT};
+  RecoilWhen recoilWhen{RecoilWhen::ALWAYS};
+  RecoilType recoilType{RecoilType::CONSTANT};
 
  public:
   Recoil() = default;

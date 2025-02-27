@@ -1,4 +1,4 @@
-#include "../../../../lib/json.hpp"
+#include "../../../lib/json.hpp"
 #include "multristrike.h"
 
 using json = nlohmann::json;

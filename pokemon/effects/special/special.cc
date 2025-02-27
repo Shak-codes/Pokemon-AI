@@ -7,22 +7,11 @@
 
 using json = nlohmann::json;
 
-Special::Special(std::string move, const json& effects)
-    : fixed(effects), multistrike(effects), recoil(effects) {
-  std::string name = move;
-
-  for (const auto& flags : allFlags) {
-    if (std::find(flags.begin(), flags.end(), name) != flags.end()) {
-      isSpecial = true;
-      specialEffect = name;
-      break;
-    }
-  }
+Special::Special(const json& effects) {
+  if (!effects.contains("special")) return;
+  name = effects["special"];
 }
 
-bool Special::hasSpecialEffect() const { return isSpecial; }
+bool Special::hasSpecialEffect() const { return name != "N/A"; }
 
-std::string Special::getSpecialEffect() const {
-  if (isSpecial) return specialEffect;
-  return "N/A";
-}
+std::string Special::getSpecialEffect() const { return name; }
