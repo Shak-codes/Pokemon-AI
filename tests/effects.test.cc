@@ -34,27 +34,86 @@ int main() {
     Effects moveEffects{name, moveData["effects"]};
     bool basicMove = true;
 
-    std::vector<std::pair<std::string, bool>> effectChecks = {
-        {"affects the user's status", moveEffects.affectsUserStatus()},
-        {"affects the opponent's status", moveEffects.affectsOpponentStatus()},
-        {"affects the user's stats", moveEffects.affectsUserStats()},
-        {"affects the opponent's stats", moveEffects.affectsOpponentStats()}};
-
-    for (const auto& [description, condition] : effectChecks) {
-      if (condition) {
-        std::cout << "\n|----" << description;
-        basicMove = false;
-      }
-    }
-
-    if (moveEffects.isSpecial()) {
-      std::cout << "\n|---- is a special move";
+    if (moveEffects.isBind()) {
+      std::cout << "\n|--- is a binding move";
       basicMove = false;
     }
-
-    if (basicMove) std::cout << " is a basic move";
-
-    std::cout << std::endl;
+    if (moveEffects.isCharge()) {
+      std::cout << "\n|--- is a charge move";
+      basicMove = false;
+    }
+    if (moveEffects.isDrain()) {
+      std::cout << "\n|--- is a health draining move";
+      basicMove = false;
+    }
+    if (moveEffects.isFixed()) {
+      std::cout << "\n|--- is a fixed damage move";
+      basicMove = false;
+    }
+    if (moveEffects.isLocked()) {
+      std::cout << "\n|--- is a locking move";
+      basicMove = false;
+    }
+    if (moveEffects.isHealing()) {
+      std::cout << "\n|--- is a healing move";
+      basicMove = false;
+    }
+    if (moveEffects.isMultistrike()) {
+      std::cout << "\n|--- is a multistrike move";
+      basicMove = false;
+    }
+    if (moveEffects.isRecoil()) {
+      std::cout << "\n|--- is a recoil move";
+      basicMove = false;
+    }
+    if (moveEffects.isSpecial()) {
+      std::cout << "\n|--- is a special move";
+      basicMove = false;
+    }
+    if (moveEffects.affectsOpponentStats()) {
+      std::cout << "\n|--- is a move that alters the opponent's stats";
+      basicMove = false;
+    }
+    if (moveEffects.affectsUserStats()) {
+      std::cout << "\n|--- is a move that alters the user's stats";
+      basicMove = false;
+    }
+    if (moveEffects.affectsOpponentStatus()) {
+      std::cout << "\n|--- is a move that affects the opponent's status";
+      basicMove = false;
+    }
+    if (moveEffects.affectsUserStatus()) {
+      std::cout << "\n|--- is a move that affects the user's status";
+      basicMove = false;
+    }
+    if (moveEffects.isFlinch()) {
+      std::cout << "\n|--- is a flinching move";
+      basicMove = false;
+    }
+    if (moveEffects.isCritical()) {
+      std::cout << "\n|--- is a move with a high critical ratio";
+      basicMove = false;
+    }
+    if (moveEffects.isSemiInvulnerable()) {
+      std::cout << "\n|--- is a semi-invulnerable move";
+      basicMove = false;
+    }
+    if (moveEffects.isRecharge()) {
+      std::cout << "\n|--- is a recharging move";
+      basicMove = false;
+    }
+    if (moveEffects.isField()) {
+      std::cout << "\n|--- is a field move";
+      basicMove = false;
+    }
+    if (moveEffects.isPriority()) {
+      std::cout << "\n|--- is a priority move";
+      basicMove = false;
+    }
+    if (basicMove) {
+      std::cout << " is a basic move";
+    }
+    std::cout << "\n";
   }
 
   std::cout << "All Effects tests passed!" << std::endl;
