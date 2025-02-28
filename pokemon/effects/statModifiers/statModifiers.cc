@@ -4,7 +4,7 @@
 using json = nlohmann::json;
 
 StatModifiers::StatModifiers(const json& statusEffects) {
-  for (const auto& [key, value] : mods.items()) {
+  for (const auto& [key, value] : statusEffects.items()) {
     if (value.contains("chance") && value.contains("value")) {
       this->mods[key] = {value["value"].get<int>(),
                          value["chance"].get<float>()};

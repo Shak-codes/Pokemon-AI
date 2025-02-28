@@ -1,7 +1,7 @@
 #ifndef FIXED
 #define FIXED
 
-#include "../../../../lib/json.hpp"
+#include "../../../lib/json.hpp"
 
 using json = nlohmann::json;
 

@@ -10,6 +10,7 @@
 #include "drain/drain.h"
 #include "fixed/fixed.h"
 #include "healing/healing.h"
+#include "locked/locked.h"
 #include "multistrike/multristrike.h"
 #include "recoil/recoil.h"
 #include "special/special.h"
@@ -23,6 +24,7 @@ class Effects {
   Charge charge;
   Drain drain;
   Fixed fixed;
+  Locked locked;
   Healing healing;
   Multistrike multistrike;
   Recoil recoil;
@@ -32,12 +34,21 @@ class Effects {
   Status userStatus;
   Status oppStatus;
 
+  float flinch{0.0f};
+  float critical{0.0f};
+  bool effect{false};
+  bool semiInvulnerable{false};
+  int recharge{0};
+  std::string field{"none"};
+  int priority{0};
+
  public:
   Effects(std::string move, const json& effects);
   bool isBind() const;
   bool isCharge() const;
   bool isDrain() const;
   bool isFixed() const;
+  bool isLocked() const;
   bool isHealing() const;
   bool isMultistrike() const;
   bool isRecoil() const;
@@ -46,7 +57,16 @@ class Effects {
   bool affectsOpponentStatus() const;
   bool affectsUserStats() const;
   bool affectsOpponentStats() const;
+  bool isFlinch() const;
+  bool isCritical() const;
+  bool isSemiInvulnerable() const;
+  bool isRecharge() const;
+  bool isField() const;
+  bool isPriority() const;
+
   std::string getSpecial() const;
+
+  bool hasEffect() const;
 };
 
 #endif
