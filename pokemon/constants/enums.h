@@ -48,6 +48,11 @@ const std::unordered_map<std::string, Type> typeMap = {
     {"Fairy", Type::Fairy}
 };
 
+Type stringToType(const std::string& typeStr) {
+    auto it = typeMap.find(typeStr);
+    return (it != typeMap.end()) ? it->second : Type::Normal;
+}
+
 enum class Category { Physical, Special, Status, None };
 
 const std::unordered_map<std::string, Category> categoryMap = {
@@ -55,5 +60,10 @@ const std::unordered_map<std::string, Category> categoryMap = {
   {"Special", Category::Special},
   {"Status", Category::Status}
 };
+
+Category stringToCategory(const std::string& categoryStr) {
+    auto it = categoryMap.find(categoryStr);
+    return (it != categoryMap.end()) ? it->second : Category::Physical;
+}
 
 #endif

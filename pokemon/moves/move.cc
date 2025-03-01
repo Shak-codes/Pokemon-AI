@@ -8,9 +8,8 @@ using json = nlohmann::json;
 
 Move::Move(const json& moveData)
     : name(moveData["name"]),
-      type(moveData["type"]),
-      category(moveData["category"]),
-      target(moveData["target"]),
+      type(stringToType(moveData["type"])),
+      category(stringToCategory(moveData["category"])),
       power(moveData["power"]),
       accuracy(moveData["accuracy"]),
       maxPP(moveData["pp"]),
