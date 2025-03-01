@@ -4,33 +4,30 @@
 #include <string>
 
 #include "../constants/enums.h"
+#include "../../lib/json.hpp"
 
 class Move {
   std::string name;
   Type type;
   Category category;
-  Target target;
   int power;
   float accuracy;
+  int maxPP;
   int pp;
   bool special;
-  Effect effect;
+  Effect effects;
 
  public:
-  Move(const std::string& name, Type type, Category category, Target target,
-       int power, float accuracy, int pp, bool special);
+  Move(const json& moveData);
   std::string getName() const;
   Type getType() const;
-  Category getCat() const;
-  Target getTarget() const;
-  int getPwr() const;
-  float getAcc() const;
+  Category getCategory() const;
+  int getPower() const;
+  float getAccuracy() const;
   int getPP() const;
-  bool getSpecial() const;
-  // Effect getEffect() const;
-  // bool pureStatus() const;
-  // bool isBuff() const;
-  // bool isDebuff() const;
+  void decrementPP();
+  void restorePP(int value);
+  Effect getEffect() const;
 };
 
 #endif

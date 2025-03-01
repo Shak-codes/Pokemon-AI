@@ -2,39 +2,35 @@
 #include "move.h"
 
 #include "../constants/enums.h"
+#include "../../lib/json.hpp"
 
-Move::Move(const std::string& name, Type type, Category category, Target target,
-           int power, float accuracy, int pp, bool special)
-    : name(name),
-      type(type),
-      category(category),
-      target(target),
-      power(power),
-      accuracy(accuracy),
-      pp(pp),
-      special(special) {}
+using json = nlohmann::json;
+
+Move::Move(const json& moveData)
+    : name(moveData["name"]),
+      type(moveData["type"]),
+      category(moveData["category"]),
+      target(moveData["target"]),
+      power(moveData["power"]),
+      accuracy(moveData["accuracy"]),
+      maxPP(moveData["pp"]),
+      pp(moveData["pp"]),
+      effects(moveData["effects"]) {}
 
 std::string Move::getName() const { return name; }
 
 Type Move::getType() const { return type; }
 
-Category Move::getCat() const { return category; }
+Category Move::getCategory() const { return category; }
 
-Target Move::getTarget() const { return target; }
+int Move::getPower() const { return power; }
 
-int Move::getPwr() const { return power; }
-
-float Move::getAcc() const { return accuracy; }
+float Move::getAccuracy() const { return accuracy; }
 
 int Move::getPP() const { return pp; }
 
-bool Move::getSpecial() const { return special; }
+void Move::decrementPP() { pp--; }
 
-// Effect Move::getEffect() const { return effect; }
+void Move::restorePP(const int value) { pp = std::clamp(pp + value, 0, maxPP)}
 
-// bool Move::pureStatus() const { return effect == Effect::STATUS && power ==
-// 0; }
-
-// bool Move::isBuff() const { return effect == Effect::BUFF; }
-
-// bool Move::isDebuff() const { return effect == Effect::DEBUFF; }
+Effect Move::getEffect() const { return effect; }
