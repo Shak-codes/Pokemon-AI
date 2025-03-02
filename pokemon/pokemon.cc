@@ -2,9 +2,11 @@
 #include "pokemon.h"
 
 #include "constants/enums.h"
+#include "../lib/json.hpp"
 
-// Constructor
-Pokemon::Pokemon(std::string& name, Stats stats, std::vector<Move> moves)
+using json = nlohmann::json;
+
+Pokemon::Pokemon(const json& pokemon)
     : name(std::move(name)), stats(std::move(stats)), moves(std::move(moves)) {}
 
 std::string Pokemon::getName() const { return name; }

@@ -66,4 +66,6 @@ Category stringToCategory(const std::string& categoryStr) {
     return (it != categoryMap.end()) ? it->second : Category::Physical;
 }
 
+enum class Status { None, Paralysis, Burn, Poison, Badly_Poison, Flinch, Recharge, Charge, }
+
 #endif

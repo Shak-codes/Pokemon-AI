@@ -9,24 +9,24 @@ void Mods::reset() {
   evasion = 0;
 }
 
-void Mods::modifyAttack(int mod) { attack = std::clamp(attack + mod, -6, 6); }
+void Mods::modifyAttack(int value) { attack = std::clamp(attack + value, -6, 6); }
 
-void Mods::modifyDefense(int mod) {
-  defense = std::clamp(defense + mod, -6, 6);
+void Mods::modifyDefense(int value) {
+  defense = std::clamp(defense + value, -6, 6);
 }
 
-void Mods::modifySpecial(int mod) {
-  special = std::clamp(special + mod, -6, 6);
+void Mods::modifySpecial(int value) {
+  special = std::clamp(special + value, -6, 6);
 }
 
-void Mods::modifySpeed(int mod) { speed = std::clamp(speed + mod, -6, 6); }
+void Mods::modifySpeed(int value) { speed = std::clamp(speed + value, -6, 6); }
 
-void Mods::modifyAccuracy(int mod) {
-  accuracy = std::clamp(accuracy + mod, -6, 6);
+void Mods::modifyAccuracy(int value) {
+  accuracy = std::clamp(accuracy + value, -6, 6);
 }
 
-void Mods::modifyEvasion(int mod) {
-  evasion = std::clamp(evasion + mod, -6, 6);
+void Mods::modifyEvasion(int value) {
+  evasion = std::clamp(evasion + value, -6, 6);
 }
 
 int Mods::getAttack() const { return attack; }
