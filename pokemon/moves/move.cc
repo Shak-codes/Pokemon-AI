@@ -1,8 +1,7 @@
-// Move.cpp
 #include "move.h"
 
-#include "../constants/enums.h"
 #include "../../lib/json.hpp"
+#include "../constants/enums.h"
 
 using json = nlohmann::json;
 
@@ -14,7 +13,7 @@ Move::Move(const json& moveData)
       accuracy(moveData["accuracy"]),
       maxPP(moveData["pp"]),
       pp(moveData["pp"]),
-      effects(moveData["effects"]) {}
+      effects(moveData["name"], moveData["effects"]) {}
 
 std::string Move::getName() const { return name; }
 
@@ -30,6 +29,8 @@ int Move::getPP() const { return pp; }
 
 void Move::decrementPP() { pp--; }
 
-void Move::restorePP(const int value) { pp = std::clamp(pp + value, 0, maxPP)}
+void Move::restorePP(const int value) { pp = std::clamp(pp + value, 0, maxPP); }
 
-Effect Move::getEffect() const { return effect; }
+bool Move::status() const { return !power && effects.hasEffect(); }
+
+Effects Move::getEffects() const { return effects; }

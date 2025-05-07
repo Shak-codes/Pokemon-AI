@@ -1,5 +1,5 @@
-#ifndef SPECIAL
-#define SPECIAL
+#ifndef __SPECIAL__
+#define __SPECIAL__
 
 #include <string>
 

@@ -33,6 +33,7 @@ class Stats {
   int getDefense() const;
   int getSpecial() const;
   int getSpeed() const;
+  std::unordered_map<std::string, int> getStats() const;
 };
 
 #endif

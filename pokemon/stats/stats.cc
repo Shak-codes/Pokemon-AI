@@ -24,3 +24,11 @@ int Stats::getAttack() const { return attack; }
 int Stats::getDefense() const { return defense; }
 int Stats::getSpecial() const { return special; }
 int Stats::getSpeed() const { return speed; }
+
+std::unordered_map<std::string, int> Stats::getStats() const {
+  return {{"health", health},
+          {"attack", attack},
+          {"defense", defense},
+          {"special", special},
+          {"speed", speed}};
+}

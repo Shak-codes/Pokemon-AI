@@ -3,31 +3,33 @@
 
 #include <string>
 
-#include "../constants/enums.h"
 #include "../../lib/json.hpp"
+#include "../constants/enums.h"
+#include "../effects/effects.h"
 
 class Move {
   std::string name;
   Type type;
   Category category;
+  Effects effects;
   int power;
   float accuracy;
   int maxPP;
   int pp;
   bool special;
-  Effect effects;
 
  public:
   Move(const json& moveData);
   std::string getName() const;
   Type getType() const;
   Category getCategory() const;
+  Effects getEffects() const;
   int getPower() const;
   float getAccuracy() const;
   int getPP() const;
   void decrementPP();
   void restorePP(int value);
-  Effect getEffect() const;
+  bool status() const;
 };
 
 #endif

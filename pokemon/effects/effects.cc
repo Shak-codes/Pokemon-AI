@@ -13,6 +13,7 @@ Effects::Effects(std::string move, const json& effects)
       charge(effects),
       drain(effects),
       fixed(effects),
+      field(effects),
       locked(effects),
       healing(effects),
       multistrike(effects),
@@ -39,7 +40,6 @@ Effects::Effects(std::string move, const json& effects)
       critical(effects.value("critical", 0.0f)),
       semiInvulnerable(effects.value("semi-invulnerable", false)),
       recharge(effects.value("recharge", 0)),
-      field(effects.value("field", "none")),
       priority(effects.value("priority", 0)) {
   this->effect = isBind() || isCharge() || isDrain() || isFixed() ||
                  isHealing() || isMultistrike() || isRecoil() || isSpecial() ||
@@ -64,9 +64,12 @@ bool Effects::isFlinch() const { return flinch > 0.0f; }
 bool Effects::isCritical() const { return critical > 0.0f; }
 bool Effects::isSemiInvulnerable() const { return semiInvulnerable; }
 bool Effects::isRecharge() const { return recharge > 0; }
-bool Effects::isField() const { return field != "none"; }
+bool Effects::isField() const { return field.hasEffect(); }
 bool Effects::isPriority() const { return priority != 0; }
 
 std::string Effects::getSpecial() const { return special.getSpecialEffect(); }
 
 bool Effects::hasEffect() const { return effect; }
+bool Effects::hasCat2Effect() const {
+  return userStats.hasEffect() || oppStats.hasEffect();
+}

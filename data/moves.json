@@ -1319,7 +1319,9 @@
     "power": 40,
     "accuracy": 1,
     "pp": 20,
-    "effects": {}
+    "effects": {
+      "special": "payday"
+    }
   },
   "Peck": {
     "name": "Peck",
@@ -1543,11 +1545,7 @@
     "accuracy": false,
     "pp": 20,
     "effects": {
-      "statMods": {
-        "user": {
-          "reflect": true
-        }
-      }
+      "field": "reflect"
     }
   },
   "Rest": {
@@ -2290,11 +2288,7 @@
     "accuracy": false,
     "pp": 10,
     "effects": {
-      "type": {
-        "user": {
-          "transform": 1
-        }
-      }
+      "special": "transform"
     }
   },
   "Tri Attack": {

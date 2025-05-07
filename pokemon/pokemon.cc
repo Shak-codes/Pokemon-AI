@@ -1,8 +1,8 @@
 // Pokemon.cpp
 #include "pokemon.h"
 
-#include "constants/enums.h"
 #include "../lib/json.hpp"
+#include "constants/enums.h"
 
 using json = nlohmann::json;
 
@@ -15,6 +15,14 @@ std::vector<Type> Pokemon::getTypes() const { return types; }
 
 Status Pokemon::getStatus() const { return status; }
 
-int Pokemon::getStat(std::string& stat) const { return stats.getStat(stat); }
+int Pokemon::getStat(std::string& stat) const { return stats.getStats()[stat]; }
 
 std::vector<Move> Pokemon::getMoves() const { return moves; }
+
+void Pokemon::reset() {
+  status = StatusEffect::None;
+  currentHP = stats.getStats()["health"];
+  for (Move& move : moves) {
+    move.restorePP(64);
+  }
+}

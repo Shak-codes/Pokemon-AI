@@ -8,6 +8,7 @@
 #include "bind/bind.h"
 #include "charge/charge.h"
 #include "drain/drain.h"
+#include "field/field.h"
 #include "fixed/fixed.h"
 #include "healing/healing.h"
 #include "locked/locked.h"
@@ -24,6 +25,7 @@ class Effects {
   Charge charge;
   Drain drain;
   Fixed fixed;
+  Field field;
   Locked locked;
   Healing healing;
   Multistrike multistrike;
@@ -39,7 +41,6 @@ class Effects {
   bool effect{false};
   bool semiInvulnerable{false};
   int recharge{0};
-  std::string field{"none"};
   int priority{0};
 
  public:
@@ -67,6 +68,7 @@ class Effects {
   std::string getSpecial() const;
 
   bool hasEffect() const;
+  bool hasCat2Effect() const;
 };
 
 #endif
