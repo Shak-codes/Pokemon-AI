@@ -15,7 +15,9 @@ std::vector<Type> Pokemon::getTypes() const { return types; }
 
 Status Pokemon::getStatus() const { return status; }
 
-int Pokemon::getStat(std::string& stat) const { return stats.getStats()[stat]; }
+int Pokemon::getStat(const std::string& stat) const {
+  return stats.getStats()[stat];
+}
 
 std::vector<Move> Pokemon::getMoves() const { return moves; }
 
@@ -25,4 +27,15 @@ void Pokemon::reset() {
   for (Move& move : moves) {
     move.restorePP(64);
   }
+  itemsUsed - 0;
 }
+
+void Pokemon::incItemsUsed() { itemsUsed += 1; }
+
+int Pokemon::getItemsUsed() const { return itemsUsed; }
+
+int Pokemon::getCurrentHP() const { return currentHP; }
+
+void Pokemon::incSwitches() { switches += 1; }
+
+int Pokemon::getSwitches() const { return switches; }
