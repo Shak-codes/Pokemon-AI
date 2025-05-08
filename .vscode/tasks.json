@@ -119,6 +119,7 @@
             "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
             "args": [
                 "-g",
+                "${workspaceFolder}\\pokemon\\constants\\enums.cc",
                 "${workspaceFolder}\\pokemon\\effects\\bind\\bind.cc",
                 "${workspaceFolder}\\pokemon\\effects\\charge\\charge.cc",
                 "${workspaceFolder}\\pokemon\\effects\\drain\\drain.cc",
@@ -126,6 +127,7 @@
                 "${workspaceFolder}\\pokemon\\effects\\locked\\locked.cc",
                 "${workspaceFolder}\\pokemon\\effects\\healing\\healing.cc",
                 "${workspaceFolder}\\pokemon\\effects\\multistrike\\multistrike.cc",
+                "${workspaceFolder}\\pokemon\\effects\\field\\field.cc",
                 "${workspaceFolder}\\pokemon\\effects\\recoil\\recoil.cc",
                 "${workspaceFolder}\\pokemon\\effects\\special\\special.cc",
                 "${workspaceFolder}\\pokemon\\effects\\statModifiers\\statModifiers.cc",

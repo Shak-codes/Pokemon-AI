@@ -1,4 +1,3 @@
-// Pokemon.cpp
 #include "pokemon.h"
 
 #include "../lib/json.hpp"

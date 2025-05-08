@@ -110,6 +110,10 @@ int main() {
       std::cout << "\n|--- is a priority move";
       basicMove = false;
     }
+    if (moveEffects.isField()) {
+      std::cout << "\n|--- is a field move";
+      basicMove = false;
+    }
     if (basicMove) {
       std::cout << " is a basic move";
     }
