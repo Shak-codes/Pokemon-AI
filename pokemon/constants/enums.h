@@ -41,6 +41,8 @@ enum class Type {
 
 enum class Category { Physical, Special, Status, None };
 
+enum class Target { User, Opponent };
+
 Type stringToType(const std::string& typeStr);
 Category stringToCategory(const std::string& categoryStr);
 

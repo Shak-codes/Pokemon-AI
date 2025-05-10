@@ -39,7 +39,7 @@
     "category": "Status",
     "target": "Self",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 40,
     "effects": {
       "statMods": {
@@ -58,7 +58,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "statMods": {
@@ -77,7 +77,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "statMods": {
@@ -132,7 +132,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "statMods": {
@@ -151,7 +151,7 @@
     "category": "Physical",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 10,
     "effects": {
       "charge": {
@@ -376,7 +376,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "special": "conversion"
@@ -423,7 +423,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 40,
     "effects": {
       "statMods": {
@@ -507,7 +507,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 15,
     "effects": {
       "statMods": {
@@ -740,7 +740,7 @@
     "category": "Status",
     "target": "Self",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "statMods": {
@@ -825,7 +825,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "statMods": {
@@ -866,7 +866,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "statMods": {
@@ -885,7 +885,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "statMods": {
@@ -1142,7 +1142,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "field": "lightscreen"
@@ -1182,7 +1182,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 40,
     "effects": {
       "statMods": {
@@ -1236,7 +1236,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 10,
     "effects": {
       "special": "metronome"
@@ -1248,7 +1248,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 10,
     "effects": {
       "special": "mimic"
@@ -1260,7 +1260,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "statMods": {
@@ -1279,7 +1279,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "special": "Mirror Move"
@@ -1291,7 +1291,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "field": "mist"
@@ -1527,7 +1527,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "healing": {
@@ -1542,7 +1542,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "field": "reflect"
@@ -1554,7 +1554,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 10,
     "effects": {
       "status": {
@@ -1574,7 +1574,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "special": "swap"
@@ -1698,7 +1698,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 30,
     "effects": {
       "statMods": {
@@ -1860,7 +1860,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 5,
     "effects": {
       "healing": {
@@ -1921,7 +1921,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 40,
     "effects": {}
   },
@@ -1988,7 +1988,7 @@
     "category": "Physical",
     "target": "Opponent",
     "power": 50,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": false,
     "effects": {
       "recoil": {
@@ -2036,7 +2036,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 10,
     "effects": {
       "special": "substitute"
@@ -2089,7 +2089,7 @@
     "category": "Physical",
     "target": "Opponent",
     "power": 60,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "special": "alwaysHit"
@@ -2101,7 +2101,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "statMods": {
@@ -2165,7 +2165,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {}
   },
@@ -2285,7 +2285,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 10,
     "effects": {
       "special": "transform"
@@ -2357,7 +2357,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 20,
     "effects": {
       "forceSwap": true
@@ -2379,7 +2379,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": false,
+    "accuracy": 1,
     "pp": 40,
     "effects": {}
   },
