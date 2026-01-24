@@ -43,7 +43,9 @@ enum class Category { Physical, Special, Status, None };
 
 enum class Target { User, Opponent };
 
-Type stringToType(const std::string& typeStr);
 Category stringToCategory(const std::string& categoryStr);
+Type stringToType(const std::string& typeStr);
+std::string typeToString(Type type);
+std::string statusEffectToString(StatusEffect status);
 
 #endif
