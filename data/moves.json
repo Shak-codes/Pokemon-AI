@@ -195,12 +195,12 @@
     "category": "Special",
     "target": "Opponent",
     "power": 120,
-    "accuracy": 0.9,
+    "accuracy": 0.895,
     "pp": 5,
     "effects": {
       "status": {
         "opponent": {
-          "freeze": 0.1
+          "freeze": 0.102
         }
       }
     }
@@ -632,12 +632,12 @@
     "category": "Special",
     "target": "Opponent",
     "power": 120,
-    "accuracy": 0.85,
+    "accuracy": 0.844,
     "pp": 5,
     "effects": {
       "status": {
         "opponent" : {
-          "burn": 0.1
+          "burn": 0.301
         }
       }
     }
@@ -790,7 +790,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.75,
+    "accuracy": 0.746,
     "pp": 30,
     "effects": {
       "status": {
@@ -985,7 +985,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.6,
+    "accuracy": 0.598,
     "pp": 20,
     "effects": {
       "status": {
@@ -1126,12 +1126,12 @@
     "category": "Physical",
     "target": "Opponent",
     "power": 30,
-    "accuracy": 1,
+    "accuracy": 0.996,
     "pp": 30,
     "effects": {
       "status": {
         "opponent" : {
-          "paralyze": 0.3
+          "paralyze": 0.301
         }
       }
     }
@@ -1154,7 +1154,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.75,
+    "accuracy": 0.746,
     "pp": 10,
     "effects": {
       "status": {
@@ -1371,7 +1371,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.55,
+    "accuracy": 0.547,
     "pp": 40,
     "effects": {
       "status": {
@@ -1387,7 +1387,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.75,
+    "accuracy": 0.746,
     "pp": 35,
     "effects": {
       "status": {
@@ -1403,12 +1403,12 @@
     "category": "Physical",
     "target": "Opponent",
     "power": 15,
-    "accuracy": 1,
+    "accuracy": 0.996,
     "pp": 35,
     "effects": {
       "status": {
         "opponent" : {
-          "poison": 0.3
+          "poison": 0.203
         }
       }
     }
@@ -1717,7 +1717,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.55,
+    "accuracy": 0.547,
     "pp": 15,
     "effects": {
       "status": {
@@ -1793,7 +1793,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.75,
+    "accuracy": 0.746,
     "pp": 15,
     "effects": {
       "status": {
@@ -1809,12 +1809,12 @@
     "category": "Special",
     "target": "Opponent",
     "power": 65,
-    "accuracy": 1,
+    "accuracy": 0.996,
     "pp": 20,
     "effects": {
       "status": {
         "opponent": {
-          "poison": 0.3
+          "poison": 0.402
         }
       }
     }
@@ -1825,12 +1825,12 @@
     "category": "Special",
     "target": "Opponent",
     "power": 20,
-    "accuracy": 0.7,
+    "accuracy": 0.695,
     "pp": 20,
     "effects": {
       "status": {
         "opponent": {
-          "poison": 0.4
+          "poison": 0.402
         }
       }
     }
@@ -1931,7 +1931,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 1,
+    "accuracy": 0.996,
     "pp": 15,
     "effects": {
       "status": {
@@ -2004,7 +2004,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.75,
+    "accuracy": 0.746,
     "pp": 30,
     "effects": {
       "status": {
@@ -2195,12 +2195,12 @@
     "category": "Special",
     "target": "Opponent",
     "power": 120,
-    "accuracy": 0.7,
+    "accuracy": 0.695,
     "pp": 10,
     "effects": {
       "status": {
         "opponent": {
-          "paralyze": 0.1
+          "paralyze": 0.102
         }
       }
     }
@@ -2243,12 +2243,12 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 1,
+    "accuracy": 0.996,
     "pp": 20,
     "effects": {
       "status": {
         "opponent": {
-          "paralyze": 0.1
+          "paralyze": 1
         }
       }
     }
@@ -2259,9 +2259,15 @@
     "category": "Special",
     "target": "Opponent",
     "power": 95,
-    "accuracy": 1,
+    "accuracy": 0.996,
     "pp": 15,
-    "effects": {}
+    "effects": {
+      "status": {
+        "opponent": {
+          "paralyze": 0.102
+        }
+      }
+    }
   },
   "Toxic": {
     "name": "Toxic",
@@ -2269,7 +2275,7 @@
     "category": "Status",
     "target": "Opponent",
     "power": false,
-    "accuracy": 0.85,
+    "accuracy": 0.844,
     "pp": 10,
     "effects": {
       "status": {

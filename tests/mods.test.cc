@@ -94,7 +94,7 @@ void testClamping() {
 
   mods.reset();
   mods.modifyAttack(3);
-  mods.modifyAttack(5);  // 3 + 5 = 8, should clamp to 6
+  mods.modifyAttack(5);
   assert(mods.getAttack() == 6 && "Attack should be clamped to 6 after overflow");
 
   // Test lower bound clamping
@@ -104,7 +104,7 @@ void testClamping() {
 
   mods.reset();
   mods.modifyDefense(-4);
-  mods.modifyDefense(-5);  // -4 + -5 = -9, should clamp to -6
+  mods.modifyDefense(-5);
   assert(mods.getDefense() == -6 &&
          "Defense should be clamped to -6 after underflow");
 
