@@ -9,3 +9,5 @@ Field::Field(const json& effects) {
 }
 
 bool Field::hasEffect() const { return isField; }
+
+const std::string& Field::getFieldType() const { return type; }
